@@ -14,3 +14,16 @@ class APIService:
                 return None
         except Exception as e:
             return None
+
+    @staticmethod
+    def convert_crypto(symbol, amount, target_currency):
+        try:
+            response = requests.get(APIService.API_URL, params={"ids": symbol.lower(), "vs_currencies": target_currency.lower()})
+            data = response.json()
+            if symbol.lower() in data:
+                rate = data[symbol.lower()][target_currency.lower()]
+                return amount * rate
+            else:
+                return None
+        except Exception as e:
+            return None

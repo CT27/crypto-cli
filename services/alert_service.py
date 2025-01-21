@@ -1,19 +1,29 @@
 import json
 
-ALERTS_FILE = "alerts.json"
+class AlertService:
+    ALERTS_FILE = "alerts.json"
 
-def set_price_alert(symbol, target_price):
-    alerts = load_alerts()
-    alerts[symbol.lower()] = target_price
-    save_alerts(alerts)
+    @staticmethod
+    def set_alert(symbol, target_price):
+        alerts = AlertService.load_alerts()
+        alerts[symbol.lower()] = target_price
+        AlertService.save_alerts(alerts)
+        return f"Alert set for {symbol.upper()} at ${target_price}"
 
-def load_alerts():
-    try:
-        with open(ALERTS_FILE, "r") as f:
-            return json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError):
-        return {}
+    @staticmethod
+    def check_alerts():
+        alerts = AlertService.load_alerts()
+        return alerts if alerts else "No alerts set."
 
-def save_alerts(alerts):
-    with open(ALERTS_FILE, "w") as f:
-        json.dump(alerts, f, indent=4)
+    @staticmethod
+    def load_alerts():
+        try:
+            with open(AlertService.ALERTS_FILE, "r") as f:
+                return json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError):
+            return {}
+
+    @staticmethod
+    def save_alerts(alerts):
+        with open(AlertService.ALERTS_FILE, "w") as f:
+            json.dump(alerts, f, indent=4)
