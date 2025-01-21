@@ -1,7 +1,9 @@
 import argparse
 import requests
+import argcomplete  # Add the import here
 from rich.console import Console
 from rich.table import Table
+
 
 API_URL =  "https://api.coingecko.com/api/v3/simple/price"
 console = Console()
@@ -44,6 +46,9 @@ def main():
     convert_parser.add_argument("symbol", type=str, help="Cryptocurrency symbol (e.g. BTC)")
     convert_parser.add_argument("amount", type=float, help="Amount of cryptocurrency to convert")
     convert_parser.add_argument("target_currency", type=str, help="Target currency (e.g. USD, EUR)")
+
+    # Enable autocomplete for CLI commands
+    argcomplete.autocomplete(parser)
 
     args = parser.parse_args()
     if args.command == "price":
