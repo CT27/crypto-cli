@@ -1,5 +1,6 @@
-from sqlalchemy import create_engine, Column, Integer, String, Float, ForeignKey
-from sqlalchemy.orm import declarative_base, relationship, sessionmaker
+from sqlalchemy.orm import declarative_base, relationship
+from sqlalchemy import Column, Integer, String, Float, ForeignKey, create_engine
+from sqlalchemy.orm import sessionmaker
 
 Base = declarative_base()
 
@@ -21,12 +22,14 @@ class Portfolio(Base):
     user_id = Column(Integer, ForeignKey('users.id'))
     crypto_id = Column(Integer, ForeignKey('cryptocurrencies.id'))
     quantity = Column(Float, nullable=False)
-
+    
     user = relationship('User', back_populates='portfolios')
     cryptocurrency = relationship('Cryptocurrency')
 
-# Database setup
-engine = create_engine('sqlite:///crypto_portfolio.db')
-Base.metadata.create_all(engine)
-Session = sessionmaker(bind=engine)
-session = Session()
+# Database connection
+DATABASE_URL = "sqlite:///crypto_portfolio.db"
+engine = create_engine(DATABASE_URL, echo=True)
+
+# Create session factory
+SessionLocal = sessionmaker(bind=engine)
+session = SessionLocal()
