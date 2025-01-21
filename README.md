@@ -41,3 +41,6 @@ README.md
 # ## License
 
 # MIT License
+
+#Check Cryptocurrency Prices:
+#python crypto_cli_tool.py price bitcoin
