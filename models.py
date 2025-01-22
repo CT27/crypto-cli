@@ -12,13 +12,15 @@ class User(Base):
 
 class Cryptocurrency(Base):
     __tablename__ = 'cryptocurrencies'
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer, primary_key=True, autoincrement=True)
     name = Column(String, unique=True, nullable=False)
     symbol = Column(String, unique=True, nullable=False)
+    price = Column(Float, nullable=False)
+
 
 class Portfolio(Base):
     __tablename__ = 'portfolios'
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer, primary_key=True, autoincrement=True)
     user_id = Column(Integer, ForeignKey('users.id'))
     crypto_id = Column(Integer, ForeignKey('cryptocurrencies.id'))
     quantity = Column(Float, nullable=False)

@@ -1,4 +1,5 @@
 import json
+from models import session, User, Portfolio, Cryptocurrency
 
 class PortfolioService:
     PORTFOLIO_FILE = "portfolio.json"
@@ -16,6 +17,24 @@ class PortfolioService:
         if not portfolio:
             return "Your portfolio is empty."
         return portfolio
+    
+    @staticmethod
+    def view_user_portfolio(username):
+        user = session.query(User).filter_by(username=username).first()
+        if not user:
+            return f"[bold red]Error: User '{username}' not found.[/bold red]"
+
+        # Ensure query filters by user_id
+        portfolios = session.query(Portfolio).filter(Portfolio.user_id == user.id).all()
+        if not portfolios:
+            return f"[bold red]User '{username}' has no cryptocurrencies in their portfolio.[/bold red]"
+
+        portfolio_output = f"Portfolio for {username}:\n"
+        for portfolio in portfolios:
+            crypto = session.query(Cryptocurrency).filter_by(id=portfolio.crypto_id).first()
+            portfolio_output += f"{crypto.name} ({crypto.symbol.upper()}): {portfolio.quantity} units\n"
+        
+        return portfolio_output
 
     @staticmethod
     def load_portfolio():
