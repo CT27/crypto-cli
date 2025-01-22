@@ -33,3 +33,6 @@ engine = create_engine(DATABASE_URL, echo=True)
 # Create session factory
 SessionLocal = sessionmaker(bind=engine)
 session = SessionLocal()
+
+# Ensure tables are created (run this once)
+Base.metadata.create_all(engine)
