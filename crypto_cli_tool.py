@@ -3,7 +3,7 @@ from rich.console import Console
 from services.alert_service import AlertService
 from services.api_service import APIService
 from services.portfolio_service import PortfolioService
-
+from services.user_service import UserService  # Import the user service
 
 console = Console()
 
@@ -33,19 +33,26 @@ def main():
     alert_parser.add_argument("symbol", nargs='?', help="Cryptocurrency symbol (e.g. bitcoin)")
     alert_parser.add_argument("target_price", type=float, nargs='?', help="Target price for alert")
 
+    # Add user command
+    user_parser = subparsers.add_parser("adduser", help="Add a new user to the database")
+    user_parser.add_argument("username", type=str, help="Username to add")
+
     args = parser.parse_args()
+
     if args.command == "price":
         price = APIService.get_crypto_price(args.symbol)
         if price:
             console.print(f"[bold green]{args.symbol.upper()} Price: ${price}[/bold green]")
         else:
             console.print(f"[bold red]Error: Cryptocurrency '{args.symbol}' not found.[/bold red]")
+
     elif args.command == "convert":
         converted_value = APIService.convert_crypto(args.symbol, args.amount, args.target_currency)
         if converted_value:
-         console.print(f"[bold green]{args.amount} {args.symbol.upper()} = {converted_value:.2f} {args.target_currency.upper()}[/bold green]")
+            console.print(f"[bold green]{args.amount} {args.symbol.upper()} = {converted_value:.2f} {args.target_currency.upper()}[/bold green]")
         else:
             console.print(f"[bold red]Error: Could not convert {args.symbol} to {args.target_currency}[/bold red]")
+
     elif args.command == "portfolio":
         if args.action == "add" and args.symbol and args.quantity:
             console.print(PortfolioService.add_to_portfolio(args.symbol, args.quantity))
@@ -53,6 +60,7 @@ def main():
             console.print(PortfolioService.view_portfolio())
         else:
             console.print("Invalid portfolio command usage.")
+
     elif args.command == "alert":
         if args.action == "set" and args.symbol and args.target_price:
             console.print(AlertService.set_alert(args.symbol, args.target_price))
@@ -60,6 +68,11 @@ def main():
             console.print(AlertService.check_alerts())
         else:
             console.print("[bold red]Invalid alert command usage.[/bold red]")
+
+    elif args.command == "adduser":
+        result = UserService.add_user(args.username)
+        console.print(result)
+
     else:
         parser.print_help()
 
