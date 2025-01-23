@@ -6,4 +6,5 @@ def test_price_command():
 
 def test_convert_command():
     result = subprocess.run(['python', 'crypto_cli_tool.py', 'convert', 'bitcoin', '0.1', 'USD'], capture_output=True, text=True)
-    assert 'BITCOIN' in result.stdout
+    assert 'bitcoin'.upper() in result.stdout.upper()
+

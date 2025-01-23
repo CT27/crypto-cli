@@ -13,7 +13,7 @@ class PortfolioService:
             return f"[bold red]Error: User '{username}' not found.[/bold red]"
 
         # Check if the cryptocurrency exists
-        crypto = session.query(Cryptocurrency).filter_by(symbol=symbol.lower()).first()
+        crypto = session.query(Cryptocurrency).filter_by(symbol=symbol.upper()).first()
         if not crypto:
             return f"[bold red]Error: Cryptocurrency '{symbol}' not found.[/bold red]"
 
@@ -33,12 +33,20 @@ class PortfolioService:
             return "[bold red]Error: Could not add to portfolio.[/bold red]"
 
     @staticmethod
+    def view_portfolio():
+        portfolio = PortfolioService.load_portfolio()
+        if not portfolio:
+            return "Your portfolio is empty."
+        return portfolio
+    
+    @staticmethod
     def view_user_portfolio(username):
         user = session.query(User).filter_by(username=username).first()
         if not user:
             return f"[bold red]Error: User '{username}' not found.[/bold red]"
 
-        portfolios = session.query(Portfolio).filter_by(user_id=user.id).all()
+        # Ensure query filters by user_id
+        portfolios = session.query(Portfolio).filter(Portfolio.user_id == user.id).all()
         if not portfolios:
             return f"[bold red]User '{username}' has no cryptocurrencies in their portfolio.[/bold red]"
 

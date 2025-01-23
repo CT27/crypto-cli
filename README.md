@@ -54,7 +54,7 @@ README.md
 
 # portfolio Manage your portfolio
 
-    $ python crypto_cli_tool.py portfolio add bitcoin 1.0 # TO ADD
+    $ c 1.0 # TO ADD
     $ python crypto_cli_tool.py portfolio view #TO VIEW
     $ rm portfolio.json #RESET OR CLEAR PORTFOLIO
 
