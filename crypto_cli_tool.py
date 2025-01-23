@@ -22,8 +22,9 @@ def main():
     convert_parser.add_argument("target_currency", type=str, help="Target currency (e.g. USD, EUR)")
 
     # Portfolio commands
-    portfolio_parser = subparsers.add_parser("portfolio", help="Manage your portfolio")
+    portfolio_parser = subparsers.add_parser("portfolio", help="Manage user portfolio")
     portfolio_parser.add_argument("action", choices=["add", "view"], help="Action to perform")
+    portfolio_parser.add_argument("username", type=str, help="Username of the user")
     portfolio_parser.add_argument("symbol", nargs='?', help="Cryptocurrency symbol (e.g. bitcoin)")
     portfolio_parser.add_argument("quantity", type=float, nargs='?', help="Quantity of cryptocurrency")
 
@@ -54,10 +55,10 @@ def main():
             console.print(f"[bold red]Error: Could not convert {args.symbol} to {args.target_currency}[/bold red]")
 
     elif args.command == "portfolio":
-        if args.action == "add" and args.symbol and args.quantity:
-            console.print(PortfolioService.add_to_portfolio(args.symbol, args.quantity))
-        elif args.action == "view":
-            console.print(PortfolioService.view_portfolio())
+        if args.action == "add" and args.username and args.symbol and args.quantity:
+            console.print(PortfolioService.add_to_portfolio(args.username, args.symbol, args.quantity))
+        elif args.action == "view" and args.username:
+            console.print(PortfolioService.view_user_portfolio(args.username))
         else:
             console.print("Invalid portfolio command usage.")
 

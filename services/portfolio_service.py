@@ -1,31 +1,44 @@
 import json
 from models import session, User, Portfolio, Cryptocurrency
+from sqlalchemy.exc import IntegrityError
 
 class PortfolioService:
     PORTFOLIO_FILE = "portfolio.json"
 
     @staticmethod
-    def add_to_portfolio(symbol, quantity):
-        portfolio = PortfolioService.load_portfolio()
-        portfolio[symbol] = portfolio.get(symbol, 0) + quantity
-        PortfolioService.save_portfolio(portfolio)
-        return f"Added {quantity} {symbol.upper()} to portfolio."
+    def add_to_portfolio(username, symbol, quantity):
+        # Check if the user exists
+        user = session.query(User).filter_by(username=username).first()
+        if not user:
+            return f"[bold red]Error: User '{username}' not found.[/bold red]"
 
-    @staticmethod
-    def view_portfolio():
-        portfolio = PortfolioService.load_portfolio()
-        if not portfolio:
-            return "Your portfolio is empty."
-        return portfolio
-    
+        # Check if the cryptocurrency exists
+        crypto = session.query(Cryptocurrency).filter_by(symbol=symbol.lower()).first()
+        if not crypto:
+            return f"[bold red]Error: Cryptocurrency '{symbol}' not found.[/bold red]"
+
+        try:
+            # Check if portfolio entry exists
+            portfolio = session.query(Portfolio).filter_by(user_id=user.id, crypto_id=crypto.id).first()
+            if portfolio:
+                portfolio.quantity += quantity  # Update existing portfolio entry
+            else:
+                portfolio = Portfolio(user_id=user.id, crypto_id=crypto.id, quantity=quantity)
+                session.add(portfolio)
+
+            session.commit()
+            return f"[bold green]Successfully added {quantity} {symbol.upper()} to {username}'s portfolio.[/bold green]"
+        except IntegrityError:
+            session.rollback()
+            return "[bold red]Error: Could not add to portfolio.[/bold red]"
+
     @staticmethod
     def view_user_portfolio(username):
         user = session.query(User).filter_by(username=username).first()
         if not user:
             return f"[bold red]Error: User '{username}' not found.[/bold red]"
 
-        # Ensure query filters by user_id
-        portfolios = session.query(Portfolio).filter(Portfolio.user_id == user.id).all()
+        portfolios = session.query(Portfolio).filter_by(user_id=user.id).all()
         if not portfolios:
             return f"[bold red]User '{username}' has no cryptocurrencies in their portfolio.[/bold red]"
 
