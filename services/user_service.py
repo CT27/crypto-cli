@@ -16,8 +16,8 @@ class UserService:
         """
         existing_user = session.query(User).filter_by(username=username).first()
         if existing_user:
-            return f"[bold red]Error: User '{username}' already exists.[/bold red]"
-
+            print(f"[bold red]Error: User '{username}' already exists.[/bold red]")
+            return
         new_user = User(username=username)
         session.add(new_user)
         try:
