@@ -32,11 +32,20 @@ To use this tool, you need the following:
 
 > Ensure `Rich` and `SQLAlchemy` are included in the `requirements.txt`.
 
-3. **External API**:
+3. **Alembic**:
+
+   - Alembic is used for managing database migrations. Ensure the `alembic.ini` file is configured correctly.
+   - By default, the database URL in `alembic.ini` is set to:
+     ```ini
+     sqlalchemy.url = sqlite:///crypto_portfolio.db
+     ```
+   - Update this URL if you are using a different database.
+
+4. **External API**:
 
    - The tool fetches cryptocurrency data using the [CoinGecko API](https://www.coingecko.com/).
 
-4. **Database**:
+5. **Database**:
    - A database is used to store user data and portfolio information. Ensure your database models are set up with SQLAlchemy.
 
 ---
@@ -59,7 +68,10 @@ To use this tool, you need the following:
 3. Set up the database:
 
    - Configure your database connection in the `models.py` file.
-   - Run migrations or create necessary tables as per your schema.
+   - Run migrations using Alembic:
+     ```bash
+     alembic upgrade head
+     ```
 
 4. Run the CLI tool:
    ```bash
@@ -158,6 +170,47 @@ User 'john' added successfully.
 
 ---
 
+## Database Migrations with Alembic
+
+This project uses **Alembic** to manage database migrations. Alembic ensures your database schema matches your SQLAlchemy models.
+
+### Setting Up Alembic
+
+1. Ensure Alembic is installed:
+
+   ```bash
+   pip install alembic
+   ```
+
+2. Configure the `alembic.ini` file:
+
+   - The default database URL is:
+     ```ini
+     sqlalchemy.url = sqlite:///crypto_portfolio.db
+     ```
+   - Update this URL if you're using a different database (e.g., PostgreSQL).
+
+3. Apply existing migrations:
+
+   ```bash
+   alembic upgrade head
+   ```
+
+4. Create a new migration after modifying models:
+
+   ```bash
+   alembic revision --autogenerate -m "Description of migration"
+   ```
+
+5. Roll back to the previous migration (if needed):
+   ```bash
+   alembic downgrade -1
+   ```
+
+For more details, refer to the [Alembic documentation](https://alembic.sqlalchemy.org/).
+
+---
+
 ## Project Structure
 
 ```
@@ -168,17 +221,11 @@ crypto-cli-tool/
 │   ├── api_service.py            # Interacts with CoinGecko API
 │   ├── portfolio_service.py      # Manages user portfolios
 │   ├── user_service.py           # Handles user management
-├── tests/
-│   ├── test_alert_service.py      # Handles alerts
-│   ├── test_api_service.py        # Interacts with CoinGecko API
-│   ├── test_cli_service.py
-│   ├── test_crypto_service.py
-│   ├── test_portfolio_service.py  # Manages user portfolios
-│   ├── test_users.py
+├── alembic/
+│   ├── env.py                    # Alembic environment configuration
+│   ├── versions/                 # Database migration scripts
 ├── models.py                      # Database models (User, Portfolio, Cryptocurrency)
-├── alerts.json                    # JSON file for storing alerts
-├── crypto_portfolio.db
-├── portfolio.json                 # (Optional) Legacy portfolio storage
+├── alembic.ini                   # Alembic configuration file
 ├── requirements.txt               # Python dependencies
 └── README.md                      # Project documentation
 ```
@@ -192,15 +239,7 @@ The project uses the following Python libraries:
 - [Rich](https://rich.readthedocs.io/): For styled console output.
 - [Requests](https://docs.python-requests.org/): For API requests.
 - [SQLAlchemy](https://www.sqlalchemy.org/): For database interactions.
-
----
-
-## Configuration
-
-- **API Base URL**: Set to the CoinGecko API for price and conversion data.
-- **Alerts and Portfolio Storage**:
-  - Alerts are stored in `alerts.json`.
-  - Portfolio data is stored in the database and optionally in `portfolio.json`.
+- [Alembic](https://alembic.sqlalchemy.org/): For managing database migrations.
 
 ---
 
@@ -239,5 +278,4 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 ```
 
-Feel free to adjust the project URL, future improvements, or additional credits as per your specific needs.
 ```
