@@ -216,16 +216,24 @@ For more details, refer to the [Alembic documentation](https://alembic.sqlalchem
 ```
 crypto-cli-tool/
 ├── crypto_cli_tool.py            # Main CLI tool
+├── alembic/
+│   ├── env.py                    # Alembic environment configuration
+│   ├── versions/                 # Database migration scripts
 ├── services/
 │   ├── alert_service.py          # Handles alerts
 │   ├── api_service.py            # Interacts with CoinGecko API
 │   ├── portfolio_service.py      # Manages user portfolios
 │   ├── user_service.py           # Handles user management
-├── alembic/
-│   ├── env.py                    # Alembic environment configuration
-│   ├── versions/                 # Database migration scripts
+├── Tests/
+│   ├── alert_service.py          # Handles alerts
+│   ├── api_service.py            # Interacts with CoinGecko API
+│   ├── portfolio_service.py      # Manages user portfolios
+│   ├── user_service.py           # Handles user management
+├── crypto_portfolio.db
 ├── models.py                      # Database models (User, Portfolio, Cryptocurrency)
-├── alembic.ini                   # Alembic configuration file
+├── portfolio.json
+├── alerts.json
+├── alembic.ini                    # Alembic configuration file
 ├── requirements.txt               # Python dependencies
 └── README.md                      # Project documentation
 ```
