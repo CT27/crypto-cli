@@ -1,146 +1,235 @@
-README.md
+````markdown
+# Crypto CLI Tool
 
-# ---------
-
-# # Crypto CLI Tool
-
-# A simple command-line tool to fetch cryptocurrency prices and perform conversions.
-
-#
-
-# ## Installation
-
-# ```
-
-# pip install -r requirements.txt
-
-# ```
-
-#
-
-# ## Usage
-
-# ```
-
-# python crypto_cli_tool.py price bitcoin
-
-# python crypto_cli_tool.py convert bitcoin 0.1 USD
-
-# python crypto_cli_tool.py price ethereum
-
-# python crypto_cli_tool.py convert ethereum 2 eur
-
-# ```
-
-# Help and Usage Guidance
-
-# python crypto_cli_tool.py --help
-
-#
-
-# ## License
-
-# MIT License
-
-#Check Cryptocurrency Prices:
-#python crypto_cli_tool.py price bitcoin
-
-#commands:
-
-# price Get cryptocurrency price
-
-    $ python crypto_cli_tool.py price bitcoin
-    $ python crypto_cli_tool.py price bitcoin
-
-# portfolio Manage your portfolio
-
-    $ c 1.0 # TO ADD
-    $ python crypto_cli_tool.py portfolio view #TO VIEW
-    $ rm portfolio.json #RESET OR CLEAR PORTFOLIO
-
-# alert Set or check price alerts
-
-    $ python crypto_cli_tool.py alert check #CHECK ALL ALERTS
-    $ cat alerts.json #VIEW ALL ALERTS
-    $ nano alerts.json #OPENS A TEXT EDITOR
-    $ python crypto_cli_tool.py alert set ethereum 3000 #SET AN ALERT
-    $ echo "{}" > alerts.json # CLEARS THE ENTIRE LIST
-
-# convert Convert cryptocurrency to another currency
-
-    $ python crypto_cli_tool.py convert ethereum 5 jpy
-    $ python crypto_cli_tool.py convert bitcoin 1 gbp
-
-Based on the provided project structure, services, models, and CLI tool, your application is a **Cryptocurrency Portfolio Management CLI Tool** with the following core functionalities:
-
-### 1. **Cryptocurrency Price Retrieval**
-
-- **Command:** `price <symbol>`
-- **Functionality:**
-  - Fetches the latest price of a given cryptocurrency (e.g., Bitcoin, Ethereum) in USD.
-  - Uses the `APIService` to call the CoinGecko API and retrieve real-time cryptocurrency prices.
-
-### 2. **Cryptocurrency Conversion**
-
-- **Command:** `convert <symbol> <amount> <target_currency>`
-- **Functionality:**
-  - Converts a given amount of cryptocurrency (e.g., Bitcoin) into another currency (e.g., USD, EUR).
-  - Fetches the conversion rate from the CoinGecko API using `APIService`.
-
-### 3. **Portfolio Management**
-
-- **Command:** `portfolio add <symbol> <quantity>`
-- **Functionality:**
-  - Adds a specified quantity of cryptocurrency to the user's portfolio.
-  - Stores portfolio data in a JSON file (`portfolio.json`) using the `PortfolioService`.
-- **Command:** `portfolio view`
-- **Functionality:**
-  - Displays the user's cryptocurrency portfolio, showing current holdings.
-  - Reads the stored portfolio data from the JSON file.
-
-### 4. **Price Alerts Management**
-
-- **Command:** `alert set <symbol> <target_price>`
-- **Functionality:**
-  - Sets a price alert for a specified cryptocurrency at a given target price.
-  - Saves alerts to a JSON file (`alerts.json`) via the `AlertService`.
-- **Command:** `alert check`
-- **Functionality:**
-  - Checks and displays any existing price alerts.
-  - Retrieves stored alerts from the JSON file.
-
-### 5. **Database Integration (SQLAlchemy Models)**
-
-- The project uses an SQLite database (`crypto_portfolio.db`) to store:
-  - **Users:** Tracks different users who own portfolios.
-  - **Cryptocurrencies:** Stores available cryptocurrencies with their name and symbol.
-  - **Portfolios:** Links users with cryptocurrencies and stores the quantity owned.
-- SQLAlchemy ORM is used to interact with the database, providing persistence for user portfolios.
-
-### 6. **Command-Line Interface (CLI)**
-
-- The tool provides a user-friendly interface via `argparse` and uses the `rich` library for colorful output.
-- Commands allow users to interact with the tool efficiently without needing a graphical interface.
-
-### 7. **Project Structure Overview**
-
-- **Main files and directories:**
-  - `crypto_cli_tool.py`: The main CLI application.
-  - `services/`: Contains core logic for alerts, API calls, and portfolio management.
-  - `models.py`: Defines database schema using SQLAlchemy.
-  - `Pipfile & Pipfile.lock`: Dependency management for the project using Pipenv.
-  - `Tests/`: Directory likely containing unit tests to validate application functionality.
+`Crypto CLI Tool` is a command-line application that enables users to interact with cryptocurrency data, manage portfolios, set price alerts, and convert currencies. It provides a simple and user-friendly interface for cryptocurrency enthusiasts to fetch real-time data and manage their investments.
 
 ---
 
-### **In Summary, This Application:**
+## Features
 
-- Allows users to **track and manage** their cryptocurrency portfolio via the command line.
-- Provides **real-time price updates** and conversions using the CoinGecko API.
-- Enables users to **set and check alerts** for their favorite cryptocurrencies.
-- Stores portfolio data in both JSON files and an SQLite database for persistence.
-- Offers a command-line interface for easy usage without requiring a web or desktop application.
+- **Get Cryptocurrency Prices**: Retrieve the latest price of a specific cryptocurrency.
+- **Currency Conversion**: Convert cryptocurrency amounts to various fiat currencies (e.g., USD, EUR).
+- **Manage Portfolios**:
+  - Add cryptocurrencies to user portfolios.
+  - View detailed portfolios for individual users.
+- **Set and Check Price Alerts**:
+  - Set alerts for cryptocurrencies when they hit specific prices.
+  - Check all active price alerts.
+- **User Management**: Add new users to the database for personalized portfolio tracking.
 
 ---
 
-Would you like guidance on extending or optimizing this application?
+## Prerequisites
+
+To use this tool, you need the following:
+
+1. **Python**: Version 3.8 or higher.
+2. **Dependencies**: Install required Python packages via `pip`:
+   ```bash
+   pip install -r requirements.txt
+   ```
+````
+
+> Ensure `Rich` and `SQLAlchemy` are included in the `requirements.txt`.
+
+3. **External API**:
+
+   - The tool fetches cryptocurrency data using the [CoinGecko API](https://www.coingecko.com/).
+
+4. **Database**:
+   - A database is used to store user data and portfolio information. Ensure your database models are set up with SQLAlchemy.
+
+---
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/crypto-cli-tool.git
+   cd crypto-cli-tool
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Set up the database:
+
+   - Configure your database connection in the `models.py` file.
+   - Run migrations or create necessary tables as per your schema.
+
+4. Run the CLI tool:
+   ```bash
+   python crypto_cli_tool.py
+   ```
+
+---
+
+## Usage
+
+The tool supports several commands. Below are examples of each feature:
+
+### 1. Get Cryptocurrency Price
+
+```bash
+python crypto_cli_tool.py price bitcoin
+```
+
+Output:
+
+```
+BITCOIN Price: $34000
+```
+
+### 2. Convert Cryptocurrency
+
+```bash
+python crypto_cli_tool.py convert bitcoin 1 usd
+```
+
+Output:
+
+```
+1 BITCOIN = 34000.00 USD
+```
+
+### 3. Manage Portfolio
+
+- **Add to Portfolio**:
+
+  ```bash
+  python crypto_cli_tool.py portfolio add john bitcoin 0.5
+  ```
+
+  Output:
+
+  ```
+  Successfully added 0.5 BITCOIN to John's portfolio.
+  ```
+
+- **View Portfolio**:
+  ```bash
+  python crypto_cli_tool.py portfolio view john
+  ```
+  Output:
+  ```
+  Portfolio for john:
+  Bitcoin (BTC): 0.5 units
+  ```
+
+### 4. Set and Check Alerts
+
+- **Set Price Alert**:
+
+  ```bash
+  python crypto_cli_tool.py alert set bitcoin 50000
+  ```
+
+  Output:
+
+  ```
+  Alert set for BITCOIN at $50000
+  ```
+
+- **Check Alerts**:
+  ```bash
+  python crypto_cli_tool.py alert check
+  ```
+  Output:
+  ```
+  Active alerts:
+  BITCOIN: $50000
+  ```
+
+### 5. Add User
+
+```bash
+python crypto_cli_tool.py adduser john
+```
+
+Output:
+
+```
+User 'john' added successfully.
+```
+
+---
+
+## Project Structure
+
+```
+crypto-cli-tool/
+├── crypto_cli_tool.py          # Main CLI tool
+├── services/
+│   ├── alert_service.py        # Handles alerts
+│   ├── api_service.py          # Interacts with CoinGecko API
+│   ├── portfolio_service.py    # Manages user portfolios
+│   ├── user_service.py         # Handles user management
+├── models.py                   # Database models (User, Portfolio, Cryptocurrency)
+├── alerts.json                 # JSON file for storing alerts
+├── portfolio.json              # (Optional) Legacy portfolio storage
+├── requirements.txt            # Python dependencies
+└── README.md                   # Project documentation
+```
+
+---
+
+## Dependencies
+
+The project uses the following Python libraries:
+
+- [Rich](https://rich.readthedocs.io/): For styled console output.
+- [Requests](https://docs.python-requests.org/): For API requests.
+- [SQLAlchemy](https://www.sqlalchemy.org/): For database interactions.
+
+---
+
+## Configuration
+
+- **API Base URL**: Set to the CoinGecko API for price and conversion data.
+- **Alerts and Portfolio Storage**:
+  - Alerts are stored in `alerts.json`.
+  - Portfolio data is stored in the database and optionally in `portfolio.json`.
+
+---
+
+## Future Improvements
+
+- Add support for more cryptocurrency data points (market cap, volume, etc.).
+- Implement user authentication for enhanced security.
+- Provide historical price charts.
+- Add export functionality for portfolio data.
+- Integrate email or SMS notifications for price alerts.
+
+---
+
+## Contributing
+
+Contributions are welcome! If you find a bug or have a feature request, feel free to open an issue or create a pull request.
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-name`).
+3. Commit changes (`git commit -m 'Add feature'`).
+4. Push to the branch (`git push origin feature-name`).
+5. Open a pull request.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+---
+
+## Acknowledgments
+
+- Data provided by [CoinGecko API](https://www.coingecko.com/).
+- Inspired by the growing need for accessible cryptocurrency management tools.
+
+```
+
+Feel free to adjust the project URL, future improvements, or additional credits as per your specific needs.
+```
