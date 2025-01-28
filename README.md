@@ -162,17 +162,25 @@ User 'john' added successfully.
 
 ```
 crypto-cli-tool/
-├── crypto_cli_tool.py          # Main CLI tool
+├── crypto_cli_tool.py            # Main CLI tool
 ├── services/
-│   ├── alert_service.py        # Handles alerts
-│   ├── api_service.py          # Interacts with CoinGecko API
-│   ├── portfolio_service.py    # Manages user portfolios
-│   ├── user_service.py         # Handles user management
-├── models.py                   # Database models (User, Portfolio, Cryptocurrency)
-├── alerts.json                 # JSON file for storing alerts
-├── portfolio.json              # (Optional) Legacy portfolio storage
-├── requirements.txt            # Python dependencies
-└── README.md                   # Project documentation
+│   ├── alert_service.py          # Handles alerts
+│   ├── api_service.py            # Interacts with CoinGecko API
+│   ├── portfolio_service.py      # Manages user portfolios
+│   ├── user_service.py           # Handles user management
+├── tests/
+│   ├── test_alert_service.py      # Handles alerts
+│   ├── test_api_service.py        # Interacts with CoinGecko API
+│   ├── test_cli_service.py
+│   ├── test_crypto_service.py
+│   ├── test_portfolio_service.py  # Manages user portfolios
+│   ├── test_users.py
+├── models.py                      # Database models (User, Portfolio, Cryptocurrency)
+├── alerts.json                    # JSON file for storing alerts
+├── crypto_portfolio.db
+├── portfolio.json                 # (Optional) Legacy portfolio storage
+├── requirements.txt               # Python dependencies
+└── README.md                      # Project documentation
 ```
 
 ---
