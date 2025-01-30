@@ -37,7 +37,7 @@ python crypto_cli_tool.py convert bitcoin 1 usd
 ### **🔹 Add a Cryptocurrency to a User’s Portfolio**
 
 ```bash
-python crypto_cli_tool.py portfolio add candice bitcoin 0.5
+python crypto_cli_tool.py portfolio add candice btc 0.5
 ```
 
 📌 **Example Output**:
@@ -86,7 +86,7 @@ john's Portfolio:
 ### **🔹 Set a Price Alert for a Cryptocurrency**
 
 ```bash
-python crypto_cli_tool.py alert set bitcoin 50000
+python crypto_cli_tool.py alert set btc 50000
 ```
 
 📌 **Example Output**:

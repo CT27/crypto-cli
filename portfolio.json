@@ -1,4 +1,8 @@
 {
-    "bitcoin": 1.5,
-    "solana": 2.0
+    "candice": {
+        "BTC": 0.5
+    },
+    "KELLY": {
+        "XRP": 1.0
+    }
 }
