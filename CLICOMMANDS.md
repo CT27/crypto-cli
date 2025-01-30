@@ -193,18 +193,18 @@ optional arguments:
 
 ## **🎯 Summary of Commands**
 
-| **Category**             | **Command**                                                   |
-| ------------------------ | ------------------------------------------------------------- |
-| **Get Crypto Price**     | `python crypto_cli_tool.py price bitcoin`                     |
-| **Convert Crypto**       | `python crypto_cli_tool.py convert bitcoin 1 usd`             |
-| **Add to Portfolio**     | `python crypto_cli_tool.py portfolio add candice bitcoin 0.5` |
-| **View Portfolio**       | `python crypto_cli_tool.py portfolio view candice`            |
-| **List All Portfolios**  | `python crypto_cli_tool.py portfolio list`                    |
-| **Set Alert**            | `python crypto_cli_tool.py alert set bitcoin 50000`           |
-| **Check Alerts**         | `python crypto_cli_tool.py alert check`                       |
-| **Add User**             | `python crypto_cli_tool.py adduser candice`                   |
-| **List Cryptos in DB**   | `python crypto_cli_tool.py cryptocurrencies list`             |
-| **Update Crypto Prices** | `python crypto_cli_tool.py cryptocurrencies update`           |
-| **Help**                 | `python crypto_cli_tool.py --help`                            |
+| **Category**             | **Command**                                               |
+| ------------------------ | --------------------------------------------------------- |
+| **Get Crypto Price**     | `python crypto_cli_tool.py price btc`                     |
+| **Convert Crypto**       | `python crypto_cli_tool.py convert btc 1 usd`             |
+| **Add to Portfolio**     | `python crypto_cli_tool.py portfolio add candice btc 0.5` |
+| **View Portfolio**       | `python crypto_cli_tool.py portfolio view candice`        |
+| **List All Portfolios**  | `python crypto_cli_tool.py portfolio list`                |
+| **Set Alert**            | `python crypto_cli_tool.py alert set bitcoin 50000`       |
+| **Check Alerts**         | `python crypto_cli_tool.py alert check`                   |
+| **Add User**             | `python crypto_cli_tool.py adduser candice`               |
+| **List Cryptos in DB**   | `python crypto_cli_tool.py cryptocurrencies list`         |
+| **Update Crypto Prices** | `python crypto_cli_tool.py cryptocurrencies update`       |
+| **Help**                 | `python crypto_cli_tool.py --help`                        |
 
 ---
