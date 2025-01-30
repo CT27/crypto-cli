@@ -24,10 +24,10 @@ def main():
 
     # Portfolio commands
     portfolio_parser = subparsers.add_parser("portfolio", help="Manage user portfolio")
-    portfolio_parser.add_argument("action", choices=["add", "view"], help="Action to perform")
-    portfolio_parser.add_argument("username", type=str, help="Username of the user")
-    portfolio_parser.add_argument("symbol", nargs='?', help="Cryptocurrency symbol (e.g., bitcoin)")
-    portfolio_parser.add_argument("quantity", type=float, nargs='?', help="Quantity of cryptocurrency")
+    portfolio_parser.add_argument("action", choices=["add", "view", "list"], help="Action to perform")
+    portfolio_parser.add_argument("username", nargs='?', help="Username of the user (required for 'add' and 'view')")
+    portfolio_parser.add_argument("symbol", nargs='?', help="Cryptocurrency symbol (e.g., bitcoin) (required for 'add')")
+    portfolio_parser.add_argument("quantity", type=float, nargs='?', help="Quantity of cryptocurrency (required for 'add')")
 
     # Alert commands
     alert_parser = subparsers.add_parser("alert", help="Set or check price alerts")
@@ -44,10 +44,10 @@ def main():
     crypto_subparsers = crypto_parser.add_subparsers(dest="crypto_action")
 
     # List all cryptocurrencies
-    crypto_list_parser = crypto_subparsers.add_parser("list", help="List all available cryptocurrencies")
+    crypto_subparsers.add_parser("list", help="List all available cryptocurrencies")
 
     # Update cryptocurrency data
-    crypto_update_parser = crypto_subparsers.add_parser("update", help="Update cryptocurrency data from the CoinGecko API")
+    crypto_subparsers.add_parser("update", help="Update cryptocurrency data from the CoinGecko API")
 
     args = parser.parse_args()
 
@@ -70,8 +70,10 @@ def main():
             console.print(PortfolioService.add_to_portfolio(args.username, args.symbol.upper(), args.quantity))
         elif args.action == "view" and args.username:
             console.print(PortfolioService.view_user_portfolio(args.username))
+        elif args.action == "list":
+            console.print(PortfolioService.list_all_portfolios())
         else:
-            console.print("[bold red]Invalid portfolio command usage.[/bold red]")
+            console.print("[bold red]Invalid portfolio command usage. Use 'add', 'view', or 'list'.[/bold red]")
 
     elif args.command == "alert":
         if args.action == "set" and args.symbol and args.target_price:

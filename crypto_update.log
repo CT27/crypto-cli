@@ -637,3 +637,29 @@ FROM cryptocurrencies
 WHERE cryptocurrencies.id = ?
  LIMIT ? OFFSET ?
 2025-01-30 11:50:29,611 - INFO - [generated in 0.00028s] (3, 1, 0)
+2025-01-30 12:48:51,224 - INFO - BEGIN (implicit)
+2025-01-30 12:48:51,227 - INFO - SELECT users.id AS users_id, users.username AS users_username 
+FROM users
+2025-01-30 12:48:51,228 - INFO - [generated in 0.00030s] ()
+2025-01-30 12:48:51,234 - INFO - SELECT portfolios.id AS portfolios_id, portfolios.user_id AS portfolios_user_id, portfolios.crypto_id AS portfolios_crypto_id, portfolios.quantity AS portfolios_quantity 
+FROM portfolios 
+WHERE portfolios.user_id = ?
+2025-01-30 12:48:51,234 - INFO - [generated in 0.00059s] (1,)
+2025-01-30 12:48:51,240 - INFO - SELECT cryptocurrencies.id AS cryptocurrencies_id, cryptocurrencies.name AS cryptocurrencies_name, cryptocurrencies.symbol AS cryptocurrencies_symbol, cryptocurrencies.price AS cryptocurrencies_price 
+FROM cryptocurrencies 
+WHERE cryptocurrencies.id = ?
+ LIMIT ? OFFSET ?
+2025-01-30 12:48:51,240 - INFO - [generated in 0.00034s] (1, 1, 0)
+2025-01-30 12:48:51,242 - INFO - SELECT portfolios.id AS portfolios_id, portfolios.user_id AS portfolios_user_id, portfolios.crypto_id AS portfolios_crypto_id, portfolios.quantity AS portfolios_quantity 
+FROM portfolios 
+WHERE portfolios.user_id = ?
+2025-01-30 12:48:51,242 - INFO - [cached since 0.009062s ago] (2,)
+2025-01-30 12:48:51,243 - INFO - SELECT portfolios.id AS portfolios_id, portfolios.user_id AS portfolios_user_id, portfolios.crypto_id AS portfolios_crypto_id, portfolios.quantity AS portfolios_quantity 
+FROM portfolios 
+WHERE portfolios.user_id = ?
+2025-01-30 12:48:51,243 - INFO - [cached since 0.01008s ago] (3,)
+2025-01-30 12:48:51,244 - INFO - SELECT cryptocurrencies.id AS cryptocurrencies_id, cryptocurrencies.name AS cryptocurrencies_name, cryptocurrencies.symbol AS cryptocurrencies_symbol, cryptocurrencies.price AS cryptocurrencies_price 
+FROM cryptocurrencies 
+WHERE cryptocurrencies.id = ?
+ LIMIT ? OFFSET ?
+2025-01-30 12:48:51,244 - INFO - [cached since 0.00482s ago] (3, 1, 0)
