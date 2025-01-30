@@ -724,3 +724,42 @@ FROM cryptocurrencies
 WHERE cryptocurrencies.id = ?
  LIMIT ? OFFSET ?
 2025-01-30 12:51:40,612 - INFO - [generated in 0.00029s] (1, 1, 0)
+2025-01-31 09:05:04,776 - INFO - BEGIN (implicit)
+2025-01-31 09:05:04,778 - INFO - SELECT users.id AS users_id, users.username AS users_username 
+FROM users
+2025-01-31 09:05:04,779 - INFO - [generated in 0.00024s] ()
+2025-01-31 09:05:20,283 - INFO - BEGIN (implicit)
+2025-01-31 09:05:20,285 - INFO - SELECT users.id AS users_id, users.username AS users_username 
+FROM users
+2025-01-31 09:05:20,285 - INFO - [generated in 0.00025s] ()
+2025-01-31 09:05:43,645 - INFO - BEGIN (implicit)
+2025-01-31 09:05:43,659 - INFO - SELECT users.id AS users_id, users.username AS users_username 
+FROM users
+2025-01-31 09:05:43,661 - INFO - [generated in 0.00310s] ()
+2025-01-31 09:05:51,063 - INFO - BEGIN (implicit)
+2025-01-31 09:05:51,065 - INFO - SELECT users.id AS users_id, users.username AS users_username 
+FROM users
+2025-01-31 09:05:51,065 - INFO - [generated in 0.00023s] ()
+2025-01-31 09:07:01,762 - INFO - BEGIN (implicit)
+2025-01-31 09:07:01,765 - INFO - SELECT users.id AS users_id, users.username AS users_username 
+FROM users
+2025-01-31 09:07:01,765 - INFO - [generated in 0.00026s] ()
+2025-01-31 09:07:07,877 - INFO - BEGIN (implicit)
+2025-01-31 09:07:07,879 - INFO - SELECT users.id AS users_id, users.username AS users_username 
+FROM users
+2025-01-31 09:07:07,879 - INFO - [generated in 0.00044s] ()
+2025-01-31 09:15:38,431 - INFO - BEGIN (implicit)
+2025-01-31 09:15:38,436 - INFO - SELECT users.id AS users_id, users.username AS users_username 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?
+2025-01-31 09:15:38,436 - INFO - [generated in 0.00039s] ('candice', 1, 0)
+2025-01-31 09:15:38,440 - INFO - INSERT INTO users (username) VALUES (?)
+2025-01-31 09:15:38,440 - INFO - [generated in 0.00078s] ('candice',)
+2025-01-31 09:15:38,443 - INFO - COMMIT
+2025-01-31 09:15:38,445 - INFO - BEGIN (implicit)
+2025-01-31 09:15:38,447 - INFO - SELECT users.id, users.username 
+FROM users 
+WHERE users.id = ?
+2025-01-31 09:15:38,447 - INFO - [generated in 0.00023s] (1,)
+2025-01-31 09:15:38,448 - INFO - ROLLBACK

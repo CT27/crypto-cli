@@ -1,6 +1,8 @@
 from sqlalchemy.orm import declarative_base, relationship
 from sqlalchemy import Column, Integer, String, Float, ForeignKey, create_engine
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import scoped_session
+
 
 Base = declarative_base()
 
@@ -33,8 +35,9 @@ DATABASE_URL = "sqlite:///crypto_portfolio.db"
 engine = create_engine(DATABASE_URL, echo=True)
 
 # Create session factory
-SessionLocal = sessionmaker(bind=engine)
-session = SessionLocal()
+# Create session factory
+SessionLocal = sessionmaker(bind=engine, autocommit=False, autoflush=False)
+session = scoped_session(SessionLocal)  # Scoped session prevents conflicts
 
 # Ensure tables are created (run this once)
 Base.metadata.create_all(engine)

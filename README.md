@@ -214,29 +214,32 @@ For more details, refer to the [Alembic documentation](https://alembic.sqlalchem
 ## Project Structure
 
 ```
-crypto-cli-tool/
-├── crypto_cli_tool.py            # Main CLI tool
-├── alembic/
-│   ├── env.py                    # Alembic environment configuration
-│   ├── versions/                 # Database migration scripts
-├── services/
-│   ├── alert_service.py          # Handles alerts
-│   ├── api_service.py            # Interacts with CoinGecko API
-│   ├── portfolio_service.py      # Manages user portfolios
-│   ├── user_service.py           # Handles user management
-├── Tests/
-│   ├── alert_service.py          # Handles alerts
-│   ├── api_service.py            # Interacts with CoinGecko API
-│   ├── portfolio_service.py      # Manages user portfolios
-│   ├── user_service.py           # Handles user management
-├── crypto_portfolio.db
-├── models.py                      # Database models (User, Portfolio, Cryptocurrency)
-├── portfolio.json
-├── alerts.json
-├── alembic.ini                    # Alembic configuration file
-├── requirements.txt               # Python dependencies
-└── README.md                      # Project documentation
-```
+crypto-cli/
+├── crypto_cli_tool.py          # Main entry point (calls `cli.py`)
+├── cli.py                      # Handles command-line arguments and execution
+├── models.py                   # Defines database schema (Users, Cryptos, Portfolios)
+├── services/                   # Business logic and database operations
+│   ├── alert_service.py        # Handles price alerts
+│   ├── api_service.py          # Fetches cryptocurrency prices
+│   ├── portfolio_service.py    # Manages user portfolios
+│   ├── user_service.py         # Handles user management
+├── utils/                      # Utility scripts
+│   ├── update_cryptos.py       # Updates cryptocurrency prices in the database
+├── tests/                      # Unit tests (to be implemented)
+│   ├── test_alert_service.py
+│   ├── test_api_service.py
+│   ├── test_cli.py
+│   ├── test_portfolio_service.py
+│   ├── test_user_service.py
+├── alembic/                     # Database migrations (if using Alembic)
+│   ├── versions/                # Stores migration files
+│   ├── env.py
+│   ├── script.py.mako
+│   ├── alembic.ini              # Alembic configuration
+├── crypto_portfolio.db          # SQLite database file
+├── Pipfile                      # Pipenv dependency management
+├── README.md                    # Project documentation
+└── .gitignore                   # Files to ignore in version control
 
 ---
 
@@ -283,6 +286,8 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 - Data provided by [CoinGecko API](https://www.coingecko.com/).
 - Inspired by the growing need for accessible cryptocurrency management tools.
+
+```
 
 ```
 
