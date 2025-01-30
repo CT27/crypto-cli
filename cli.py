@@ -1,115 +1,126 @@
-import argparse
+import click
 from rich.console import Console
 from services.alert_service import AlertService
 from services.api_service import APIService
 from services.portfolio_service import PortfolioService
 from services.user_service import UserService
-from Utils.update_cryptos import fetch_crypto_data, update_cryptocurrencies_table  # Import update functions
+from Utils.update_cryptos import fetch_crypto_data, update_cryptocurrencies_table
 
 console = Console()
 
-def create_parser():
-    parser = argparse.ArgumentParser(description="Crypto CLI Tool")
-    subparsers = parser.add_subparsers(dest='command')
+@click.group()
+def cli():
+    """Crypto CLI Tool - Manage cryptocurrency data, portfolios, and alerts."""
+    pass
 
-    # Price command
-    price_parser = subparsers.add_parser("price", help="Get cryptocurrency price")
-    price_parser.add_argument("symbol", type=str, help="Cryptocurrency symbol (e.g., bitcoin, ethereum)")
-
-    # Convert commands
-    convert_parser = subparsers.add_parser("convert", help="Convert cryptocurrency to another currency")
-    convert_parser.add_argument("symbol", type=str, help="Cryptocurrency symbol (e.g., bitcoin)")
-    convert_parser.add_argument("amount", type=float, help="Amount of cryptocurrency to convert")
-    convert_parser.add_argument("target_currency", type=str, help="Target currency (e.g., USD, EUR)")
-
-    # Portfolio commands
-    portfolio_parser = subparsers.add_parser("portfolio", help="Manage user portfolio")
-    portfolio_parser.add_argument("action", choices=["add", "view", "list"], help="Action to perform")
-    portfolio_parser.add_argument("username", nargs='?', help="Username of the user (required for 'add' and 'view')")
-    portfolio_parser.add_argument("symbol", nargs='?', help="Cryptocurrency symbol (e.g., bitcoin) (required for 'add')")
-    portfolio_parser.add_argument("quantity", type=float, nargs='?', help="Quantity of cryptocurrency (required for 'add')")
-
-    # Alert commands
-    alert_parser = subparsers.add_parser("alert", help="Set or check price alerts")
-    alert_parser.add_argument("action", choices=["set", "check"], help="Action to perform")
-    alert_parser.add_argument("symbol", nargs='?', help="Cryptocurrency symbol (e.g., bitcoin)")
-    alert_parser.add_argument("target_price", type=float, nargs='?', help="Target price for alert")
-
-    # Add user command
-    user_parser = subparsers.add_parser("adduser", help="Add a new user to the database")
-    user_parser.add_argument("username", type=str, help="Username to add")
-
-    # Cryptocurrency management commands
-    crypto_parser = subparsers.add_parser("cryptocurrencies", help="Manage cryptocurrency data")
-    crypto_subparsers = crypto_parser.add_subparsers(dest="crypto_action")
-
-    # List all cryptocurrencies
-    crypto_subparsers.add_parser("list", help="List all available cryptocurrencies")
-
-    # Update cryptocurrency data
-    crypto_subparsers.add_parser("update", help="Update cryptocurrency data from the CoinGecko API")
-
-    return parser
-
-def handle_command(args):
-    """Executes the appropriate command based on parsed arguments."""
-    if args.command == "price":
-        price = APIService.get_crypto_price(args.symbol)
-        if price:
-            console.print(f"[bold green]{args.symbol.upper()} Price: ${price}[/bold green]")
-        else:
-            console.print(f"[bold red]Error: Cryptocurrency '{args.symbol}' not found.[/bold red]")
-
-    elif args.command == "convert":
-        converted_value = APIService.convert_crypto(args.symbol, args.amount, args.target_currency)
-        if converted_value:
-            console.print(f"[bold green]{args.amount} {args.symbol.upper()} = {converted_value:.2f} {args.target_currency.upper()}[/bold green]")
-        else:
-            console.print(f"[bold red]Error: Could not convert {args.symbol} to {args.target_currency}[/bold red]")
-
-    elif args.command == "portfolio":
-        if args.action == "add" and args.username and args.symbol and args.quantity:
-            console.print(PortfolioService.add_to_portfolio(args.username, args.symbol.upper(), args.quantity))
-        elif args.action == "view" and args.username:
-            console.print(PortfolioService.view_user_portfolio(args.username))
-        elif args.action == "list":
-            console.print(PortfolioService.list_all_portfolios())
-        else:
-            console.print("[bold red]Invalid portfolio command usage. Use 'add', 'view', or 'list'.[/bold red]")
-
-    elif args.command == "alert":
-        if args.action == "set" and args.symbol and args.target_price:
-            console.print(AlertService.set_alert(args.symbol.upper(), args.target_price))
-        elif args.action == "check":
-            console.print(AlertService.check_alerts())
-        else:
-            console.print("[bold red]Invalid alert command usage.[/bold red]")
-
-    elif args.command == "adduser":
-        result = UserService.add_user(args.username)
-        console.print(result)
-
-    elif args.command == "cryptocurrencies":
-        if args.crypto_action == "list":
-            cryptos = PortfolioService.list_cryptocurrencies()
-            if cryptos:
-                console.print("[bold green]Available Cryptocurrencies:[/bold green]")
-                for crypto in cryptos:
-                    console.print(f"{crypto.name} ({crypto.symbol}) - ${crypto.price}")
-            else:
-                console.print("[bold red]No cryptocurrencies found in the database.[/bold red]")
-
-        elif args.crypto_action == "update":
-            crypto_data = fetch_crypto_data()
-            if crypto_data:
-                update_cryptocurrencies_table(crypto_data)
-                console.print("[bold green]Cryptocurrency data updated successfully![/bold green]")
-            else:
-                console.print("[bold red]Failed to fetch cryptocurrency data from the API.[/bold red]")
-
-        else:
-            console.print("[bold red]Invalid cryptocurrency command usage.[/bold red]")
-
+# ✅ Get Cryptocurrency Price
+@cli.command()
+@click.argument("symbol")
+def price(symbol):
+    """Get the current price of a cryptocurrency."""
+    price = APIService.get_crypto_price(symbol)
+    if price:
+        console.print(f"[bold green]{symbol.upper()} Price: ${price}[/bold green]")
     else:
-        console.print("[bold red]Invalid command. Use '--help' for more options.[/bold red]")
+        console.print(f"[bold red]Error: Cryptocurrency '{symbol}' not found.[/bold red]")
 
+# ✅ Convert Cryptocurrency
+@cli.command()
+@click.argument("symbol")
+@click.argument("amount", type=float)
+@click.argument("target_currency")
+def convert(symbol, amount, target_currency):
+    """Convert cryptocurrency to another currency."""
+    converted_value = APIService.convert_crypto(symbol, amount, target_currency)
+    if converted_value:
+        console.print(f"[bold green]{amount} {symbol.upper()} = {converted_value:.2f} {target_currency.upper()}[/bold green]")
+    else:
+        console.print(f"[bold red]Error: Could not convert {symbol} to {target_currency}[/bold red]")
+
+# ✅ Portfolio Commands
+@click.group()
+def portfolio():
+    """Manage user portfolios."""
+    pass
+
+@portfolio.command()
+@click.argument("username")
+@click.argument("symbol")
+@click.argument("quantity", type=float)
+def add(username, symbol, quantity):
+    """Add cryptocurrency to a user's portfolio."""
+    console.print(PortfolioService.add_to_portfolio(username, symbol.upper(), quantity))
+
+@portfolio.command()
+@click.argument("username")
+def view(username):
+    """View a user's portfolio."""
+    console.print(PortfolioService.view_user_portfolio(username))
+
+@portfolio.command()
+def list():
+    """List all user portfolios."""
+    console.print(PortfolioService.list_all_portfolios())
+
+cli.add_command(portfolio)
+
+# ✅ Alert Commands
+@click.group()
+def alert():
+    """Set and check price alerts."""
+    pass
+
+@alert.command()
+@click.argument("symbol")
+@click.argument("target_price", type=float)
+def set(symbol, target_price):
+    """Set a price alert."""
+    console.print(AlertService.set_alert(symbol.upper(), target_price))
+
+@alert.command()
+def check():
+    """Check all active price alerts."""
+    console.print(AlertService.check_alerts())
+
+cli.add_command(alert)
+
+# ✅ User Management
+@cli.command()
+@click.argument("username")
+def adduser(username):
+    """Add a new user."""
+    result = UserService.add_user(username)
+    console.print(result)
+
+# ✅ Cryptocurrency Management
+@click.group()
+def cryptocurrencies():
+    """Manage cryptocurrency data."""
+    pass
+
+@cryptocurrencies.command()
+def list():
+    """List all available cryptocurrencies."""
+    cryptos = PortfolioService.list_cryptocurrencies()
+    if cryptos:
+        console.print("[bold green]Available Cryptocurrencies:[/bold green]")
+        for crypto in cryptos:
+            console.print(f"{crypto.name} ({crypto.symbol}) - ${crypto.price}")
+    else:
+        console.print("[bold red]No cryptocurrencies found in the database.[/bold red]")
+
+@cryptocurrencies.command()
+def update():
+    """Update cryptocurrency data from the CoinGecko API."""
+    crypto_data = fetch_crypto_data()
+    if crypto_data:
+        update_cryptocurrencies_table(crypto_data)
+        console.print("[bold green]Cryptocurrency data updated successfully![/bold green]")
+    else:
+        console.print("[bold red]Failed to fetch cryptocurrency data from the API.[/bold red]")
+
+cli.add_command(cryptocurrencies)
+
+# ✅ Main Entry Point
+if __name__ == "__main__":
+    cli()

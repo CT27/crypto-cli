@@ -8,6 +8,7 @@ sqlalchemy = "*"
 alembic = "*"
 requests = "*"
 rich = "*"
+click = "*"
 
 [dev-packages]
 pytest = "*"
