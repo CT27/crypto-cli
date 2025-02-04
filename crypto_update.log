@@ -763,3 +763,79 @@ FROM users
 WHERE users.id = ?
 2025-01-31 09:15:38,447 - INFO - [generated in 0.00023s] (1,)
 2025-01-31 09:15:38,448 - INFO - ROLLBACK
+2025-02-03 09:03:16,913 - INFO - BEGIN (implicit)
+2025-02-03 09:03:16,925 - INFO - SELECT users.id AS users_id, users.username AS users_username 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?
+2025-02-03 09:03:16,925 - INFO - [generated in 0.00050s] ('janice', 1, 0)
+2025-02-03 09:03:16,931 - INFO - INSERT INTO users (username) VALUES (?)
+2025-02-03 09:03:16,931 - INFO - [generated in 0.00030s] ('janice',)
+2025-02-03 09:03:16,944 - INFO - COMMIT
+2025-02-03 09:03:16,947 - INFO - BEGIN (implicit)
+2025-02-03 09:03:16,952 - INFO - SELECT users.id, users.username 
+FROM users 
+WHERE users.id = ?
+2025-02-03 09:03:16,953 - INFO - [generated in 0.00070s] (1,)
+2025-02-03 09:03:16,955 - INFO - ROLLBACK
+2025-02-03 09:03:51,370 - INFO - BEGIN (implicit)
+2025-02-03 09:03:51,373 - INFO - SELECT users.id AS users_id, users.username AS users_username 
+FROM users
+2025-02-03 09:03:51,374 - INFO - [generated in 0.00030s] ()
+2025-02-03 09:03:51,377 - INFO - SELECT portfolios.id AS portfolios_id, portfolios.user_id AS portfolios_user_id, portfolios.crypto_id AS portfolios_crypto_id, portfolios.quantity AS portfolios_quantity 
+FROM portfolios 
+WHERE portfolios.user_id = ?
+2025-02-03 09:03:51,378 - INFO - [generated in 0.00100s] (1,)
+2025-02-05 08:40:59,610 - INFO - BEGIN (implicit)
+2025-02-05 08:40:59,614 - INFO - SELECT users.id AS users_id, users.username AS users_username 
+FROM users
+2025-02-05 08:40:59,614 - INFO - [generated in 0.00037s] ()
+2025-02-05 08:40:59,620 - INFO - SELECT portfolios.id AS portfolios_id, portfolios.user_id AS portfolios_user_id, portfolios.crypto_id AS portfolios_crypto_id, portfolios.quantity AS portfolios_quantity 
+FROM portfolios 
+WHERE portfolios.user_id = ?
+2025-02-05 08:40:59,621 - INFO - [generated in 0.00037s] (1,)
+2025-02-05 08:41:17,523 - INFO - BEGIN (implicit)
+2025-02-05 08:41:17,528 - INFO - SELECT users.id AS users_id, users.username AS users_username 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?
+2025-02-05 08:41:17,529 - INFO - [generated in 0.00043s] ('candice', 1, 0)
+2025-02-05 08:41:17,541 - INFO - INSERT INTO users (username) VALUES (?)
+2025-02-05 08:41:17,541 - INFO - [generated in 0.00048s] ('candice',)
+2025-02-05 08:41:17,543 - INFO - COMMIT
+2025-02-05 08:41:17,550 - INFO - BEGIN (implicit)
+2025-02-05 08:41:17,551 - INFO - SELECT users.id, users.username 
+FROM users 
+WHERE users.id = ?
+2025-02-05 08:41:17,551 - INFO - [generated in 0.00025s] (2,)
+2025-02-05 08:41:17,555 - INFO - ROLLBACK
+2025-02-05 08:41:26,774 - INFO - BEGIN (implicit)
+2025-02-05 08:41:26,779 - INFO - SELECT users.id AS users_id, users.username AS users_username 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?
+2025-02-05 08:41:26,780 - INFO - [generated in 0.00111s] ('john', 1, 0)
+2025-02-05 08:41:26,784 - INFO - INSERT INTO users (username) VALUES (?)
+2025-02-05 08:41:26,785 - INFO - [generated in 0.00075s] ('john',)
+2025-02-05 08:41:26,798 - INFO - COMMIT
+2025-02-05 08:41:26,803 - INFO - BEGIN (implicit)
+2025-02-05 08:41:26,814 - INFO - SELECT users.id, users.username 
+FROM users 
+WHERE users.id = ?
+2025-02-05 08:41:26,815 - INFO - [generated in 0.00037s] (3,)
+2025-02-05 08:41:26,821 - INFO - ROLLBACK
+2025-02-05 08:41:33,562 - INFO - BEGIN (implicit)
+2025-02-05 08:41:33,568 - INFO - SELECT users.id AS users_id, users.username AS users_username 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?
+2025-02-05 08:41:33,569 - INFO - [generated in 0.00104s] ('kelly', 1, 0)
+2025-02-05 08:41:33,581 - INFO - INSERT INTO users (username) VALUES (?)
+2025-02-05 08:41:33,581 - INFO - [generated in 0.00056s] ('kelly',)
+2025-02-05 08:41:33,583 - INFO - COMMIT
+2025-02-05 08:41:33,596 - INFO - BEGIN (implicit)
+2025-02-05 08:41:33,598 - INFO - SELECT users.id, users.username 
+FROM users 
+WHERE users.id = ?
+2025-02-05 08:41:33,599 - INFO - [generated in 0.00059s] (4,)
+2025-02-05 08:41:33,601 - INFO - ROLLBACK
