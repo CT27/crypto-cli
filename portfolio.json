@@ -2,5 +2,8 @@
     "candice": {
         "BTC": 1.0,
         "EOS": 12.0
+    },
+    "kelly": {
+        "SOL": 1.0
     }
 }

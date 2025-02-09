@@ -1600,3 +1600,102 @@ WHERE portfolios.user_id = ?
 2025-02-10 09:47:53,996 - INFO - Updated: EOS (EOS) - $0.587817
 2025-02-10 09:47:53,996 - INFO - Updated: Tezos (XTZ) - $0.862991
 2025-02-10 09:47:53,996 - INFO - Updated: FLOKI (FLOKI) - $9.083e-05
+2025-02-10 09:50:05,281 - INFO - BEGIN (implicit)
+2025-02-10 09:50:05,284 - INFO - SELECT cryptocurrencies.id AS cryptocurrencies_id, cryptocurrencies.name AS cryptocurrencies_name, cryptocurrencies.symbol AS cryptocurrencies_symbol, cryptocurrencies.price AS cryptocurrencies_price 
+FROM cryptocurrencies
+2025-02-10 09:50:05,284 - INFO - [generated in 0.00030s] ()
+2025-02-10 09:50:05,320 - INFO - SELECT users.id AS users_id, users.username AS users_username 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?
+2025-02-10 09:50:05,321 - INFO - [generated in 0.00034s] ('kelly', 1, 0)
+2025-02-10 09:50:05,326 - INFO - SELECT cryptocurrencies.id AS cryptocurrencies_id, cryptocurrencies.name AS cryptocurrencies_name, cryptocurrencies.symbol AS cryptocurrencies_symbol, cryptocurrencies.price AS cryptocurrencies_price 
+FROM cryptocurrencies 
+WHERE cryptocurrencies.symbol = ? OR lower(cryptocurrencies.name) LIKE lower(?)
+ LIMIT ? OFFSET ?
+2025-02-10 09:50:05,326 - INFO - [generated in 0.00035s] ('SOLANA', 'SOLANA', 1, 0)
+2025-02-10 09:50:05,329 - INFO - SELECT portfolios.id AS portfolios_id, portfolios.user_id AS portfolios_user_id, portfolios.crypto_id AS portfolios_crypto_id, portfolios.quantity AS portfolios_quantity 
+FROM portfolios 
+WHERE portfolios.user_id = ? AND portfolios.crypto_id = ?
+ LIMIT ? OFFSET ?
+2025-02-10 09:50:05,331 - INFO - [generated in 0.00122s] (2, 5, 1, 0)
+2025-02-10 09:50:05,335 - INFO - INSERT INTO portfolios (user_id, crypto_id, quantity) VALUES (?, ?, ?)
+2025-02-10 09:50:05,335 - INFO - [generated in 0.00030s] (2, 5, 1.0)
+2025-02-10 09:50:05,337 - INFO - COMMIT
+2025-02-10 09:50:05,343 - INFO - BEGIN (implicit)
+2025-02-10 09:50:05,344 - INFO - SELECT users.id AS users_id, users.username AS users_username 
+FROM users
+2025-02-10 09:50:05,345 - INFO - [generated in 0.00077s] ()
+2025-02-10 09:50:05,353 - INFO - SELECT portfolios.id AS portfolios_id, portfolios.user_id AS portfolios_user_id, portfolios.crypto_id AS portfolios_crypto_id, portfolios.quantity AS portfolios_quantity 
+FROM portfolios 
+WHERE portfolios.user_id = ?
+2025-02-10 09:50:05,353 - INFO - [generated in 0.00071s] (1,)
+2025-02-10 09:50:05,356 - INFO - SELECT cryptocurrencies.id AS cryptocurrencies_id, cryptocurrencies.name AS cryptocurrencies_name, cryptocurrencies.symbol AS cryptocurrencies_symbol, cryptocurrencies.price AS cryptocurrencies_price 
+FROM cryptocurrencies 
+WHERE cryptocurrencies.id = ?
+ LIMIT ? OFFSET ?
+2025-02-10 09:50:05,356 - INFO - [generated in 0.00032s] (1, 1, 0)
+2025-02-10 09:50:05,358 - INFO - SELECT cryptocurrencies.id AS cryptocurrencies_id, cryptocurrencies.name AS cryptocurrencies_name, cryptocurrencies.symbol AS cryptocurrencies_symbol, cryptocurrencies.price AS cryptocurrencies_price 
+FROM cryptocurrencies 
+WHERE cryptocurrencies.id = ?
+ LIMIT ? OFFSET ?
+2025-02-10 09:50:05,359 - INFO - [cached since 0.003644s ago] (97, 1, 0)
+2025-02-10 09:50:05,361 - INFO - SELECT portfolios.id AS portfolios_id, portfolios.user_id AS portfolios_user_id, portfolios.crypto_id AS portfolios_crypto_id, portfolios.quantity AS portfolios_quantity 
+FROM portfolios 
+WHERE portfolios.user_id = ?
+2025-02-10 09:50:05,361 - INFO - [cached since 0.008701s ago] (2,)
+2025-02-10 09:50:05,371 - INFO - SELECT cryptocurrencies.id AS cryptocurrencies_id, cryptocurrencies.name AS cryptocurrencies_name, cryptocurrencies.symbol AS cryptocurrencies_symbol, cryptocurrencies.price AS cryptocurrencies_price 
+FROM cryptocurrencies 
+WHERE cryptocurrencies.id = ?
+ LIMIT ? OFFSET ?
+2025-02-10 09:50:05,371 - INFO - [cached since 0.01525s ago] (5, 1, 0)
+2025-02-10 09:50:05,371 - INFO - COMMIT
+2025-02-10 09:50:15,235 - INFO - BEGIN (implicit)
+2025-02-10 09:50:15,238 - INFO - SELECT users.id AS users_id, users.username AS users_username 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?
+2025-02-10 09:50:15,239 - INFO - [generated in 0.00077s] ('candice', 1, 0)
+2025-02-10 09:50:15,243 - INFO - SELECT portfolios.id AS portfolios_id, portfolios.user_id AS portfolios_user_id, portfolios.crypto_id AS portfolios_crypto_id, portfolios.quantity AS portfolios_quantity 
+FROM portfolios 
+WHERE portfolios.user_id = ?
+2025-02-10 09:50:15,243 - INFO - [generated in 0.00030s] (1,)
+2025-02-10 09:50:15,248 - INFO - SELECT cryptocurrencies.id AS cryptocurrencies_id, cryptocurrencies.name AS cryptocurrencies_name, cryptocurrencies.symbol AS cryptocurrencies_symbol, cryptocurrencies.price AS cryptocurrencies_price 
+FROM cryptocurrencies 
+WHERE cryptocurrencies.id = ?
+ LIMIT ? OFFSET ?
+2025-02-10 09:50:15,249 - INFO - [generated in 0.00251s] (1, 1, 0)
+2025-02-10 09:50:15,251 - INFO - SELECT cryptocurrencies.id AS cryptocurrencies_id, cryptocurrencies.name AS cryptocurrencies_name, cryptocurrencies.symbol AS cryptocurrencies_symbol, cryptocurrencies.price AS cryptocurrencies_price 
+FROM cryptocurrencies 
+WHERE cryptocurrencies.id = ?
+ LIMIT ? OFFSET ?
+2025-02-10 09:50:15,251 - INFO - [cached since 0.004787s ago] (97, 1, 0)
+2025-02-10 09:50:15,252 - INFO - COMMIT
+2025-02-10 09:50:24,695 - INFO - BEGIN (implicit)
+2025-02-10 09:50:24,699 - INFO - SELECT users.id AS users_id, users.username AS users_username 
+FROM users
+2025-02-10 09:50:24,700 - INFO - [generated in 0.00029s] ()
+2025-02-10 09:50:24,703 - INFO - SELECT portfolios.id AS portfolios_id, portfolios.user_id AS portfolios_user_id, portfolios.crypto_id AS portfolios_crypto_id, portfolios.quantity AS portfolios_quantity 
+FROM portfolios 
+WHERE portfolios.user_id = ?
+2025-02-10 09:50:24,703 - INFO - [generated in 0.00051s] (1,)
+2025-02-10 09:50:24,706 - INFO - SELECT cryptocurrencies.id AS cryptocurrencies_id, cryptocurrencies.name AS cryptocurrencies_name, cryptocurrencies.symbol AS cryptocurrencies_symbol, cryptocurrencies.price AS cryptocurrencies_price 
+FROM cryptocurrencies 
+WHERE cryptocurrencies.id = ?
+ LIMIT ? OFFSET ?
+2025-02-10 09:50:24,707 - INFO - [generated in 0.00070s] (1, 1, 0)
+2025-02-10 09:50:24,710 - INFO - SELECT cryptocurrencies.id AS cryptocurrencies_id, cryptocurrencies.name AS cryptocurrencies_name, cryptocurrencies.symbol AS cryptocurrencies_symbol, cryptocurrencies.price AS cryptocurrencies_price 
+FROM cryptocurrencies 
+WHERE cryptocurrencies.id = ?
+ LIMIT ? OFFSET ?
+2025-02-10 09:50:24,711 - INFO - [cached since 0.004445s ago] (97, 1, 0)
+2025-02-10 09:50:24,716 - INFO - SELECT portfolios.id AS portfolios_id, portfolios.user_id AS portfolios_user_id, portfolios.crypto_id AS portfolios_crypto_id, portfolios.quantity AS portfolios_quantity 
+FROM portfolios 
+WHERE portfolios.user_id = ?
+2025-02-10 09:50:24,717 - INFO - [cached since 0.0144s ago] (2,)
+2025-02-10 09:50:24,719 - INFO - SELECT cryptocurrencies.id AS cryptocurrencies_id, cryptocurrencies.name AS cryptocurrencies_name, cryptocurrencies.symbol AS cryptocurrencies_symbol, cryptocurrencies.price AS cryptocurrencies_price 
+FROM cryptocurrencies 
+WHERE cryptocurrencies.id = ?
+ LIMIT ? OFFSET ?
+2025-02-10 09:50:24,719 - INFO - [cached since 0.01281s ago] (5, 1, 0)
+2025-02-10 09:50:24,720 - INFO - COMMIT
