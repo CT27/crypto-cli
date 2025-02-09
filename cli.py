@@ -105,7 +105,8 @@ def list():
     if cryptos:
         console.print("[bold green]Available Cryptocurrencies:[/bold green]")
         for crypto in cryptos:
-            console.print(f"{crypto.name} ({crypto.symbol}) - ${crypto.price}")
+            # Now each crypto is a dictionary; access its keys.
+            console.print(f"{crypto['name']} ({crypto['symbol']}) - ${crypto['price']}")
     else:
         console.print("[bold red]No cryptocurrencies found in the database.[/bold red]")
 

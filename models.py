@@ -35,7 +35,6 @@ DATABASE_URL = "sqlite:///crypto_portfolio.db"
 engine = create_engine(DATABASE_URL, echo=True)
 
 # Create session factory
-# Create session factory
 SessionLocal = sessionmaker(bind=engine, autocommit=False, autoflush=False)
 session = scoped_session(SessionLocal)  # Scoped session prevents conflicts
 
