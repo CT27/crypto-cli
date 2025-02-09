@@ -84,89 +84,19 @@ To use this tool, you need the following:
 
 The tool supports several commands. Below are examples of each feature:
 
-### 1. Get Cryptocurrency Price
-
-```bash
-python crypto_cli_tool.py price bitcoin
-```
-
-Output:
-
-```
-BITCOIN Price: $34000
-```
-
-### 2. Convert Cryptocurrency
-
-```bash
-python crypto_cli_tool.py convert bitcoin 1 usd
-```
-
-Output:
-
-```
-1 BITCOIN = 34000.00 USD
-```
-
-### 3. Manage Portfolio
-
-- **Add to Portfolio**:
-
-  ```bash
-  python crypto_cli_tool.py portfolio add john bitcoin 0.5
-  ```
-
-  Output:
-
-  ```
-  Successfully added 0.5 BITCOIN to John's portfolio.
-  ```
-
-- **View Portfolio**:
-  ```bash
-  python crypto_cli_tool.py portfolio view john
-  ```
-  Output:
-  ```
-  Portfolio for john:
-  Bitcoin (BTC): 0.5 units
-  ```
-
-### 4. Set and Check Alerts
-
-- **Set Price Alert**:
-
-  ```bash
-  python crypto_cli_tool.py alert set bitcoin 50000
-  ```
-
-  Output:
-
-  ```
-  Alert set for BITCOIN at $50000
-  ```
-
-- **Check Alerts**:
-  ```bash
-  python crypto_cli_tool.py alert check
-  ```
-  Output:
-  ```
-  Active alerts:
-  BITCOIN: $50000
-  ```
-
-### 5. Add User
-
-```bash
-python crypto_cli_tool.py adduser john
-```
-
-Output:
-
-```
-User 'john' added successfully.
-```
+| **Category**             | **Command**                                   |
+| ------------------------ | --------------------------------------------- |
+| **Get Crypto Price**     | `python cli.py price bitcoin` ✅              |
+| **Convert Crypto**       | `python cli.py convert btc 1 usd`             |
+| **Add to Portfolio**     | `python cli.py portfolio add candice BTC 0.5` |
+| **View Portfolio**       | `python cli.py portfolio view candice` ✅     |
+| **List All Portfolios**  | `python cli.py portfolio list` ✅             |
+| **Set Alert**            | `python cli.py alert set bitcoin 100000`✅    |
+| **Check Alerts**         | `python cli.py alert check` ✅                |
+| **Add User**             | `python cli.py adduser candice` ✅            |
+| **List Cryptos in DB**   | `python cli.py cryptocurrencies list`         |
+| **Update Crypto Prices** | `python cli.py cryptocurrencies update` ✅    |
+| **Help**                 | `python cli.py --help` ✅                     |
 
 ---
 
