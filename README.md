@@ -10,7 +10,7 @@
 - **Get Cryptocurrency Prices**: Retrieve the latest price of a specific cryptocurrency.
 - **Currency Conversion**: Convert cryptocurrency amounts to various fiat currencies (e.g., USD, EUR).
 - **Manage Portfolios**:
-  - Add cryptocurrencies to user portfolios.
+  - Add cryptocurrencies to user portfolios (using either the coin’s name or symbol).
   - View detailed portfolios for individual users.
 - **Set and Check Price Alerts**:
   - Set alerts for cryptocurrencies when they hit specific prices.
@@ -30,7 +30,7 @@ To use this tool, you need the following:
    ```
 ````
 
-> Ensure `Rich` and `SQLAlchemy` are included in the `requirements.txt`.
+> Ensure that `Rich` and `SQLAlchemy` are included in the `requirements.txt`.
 
 3. **Alembic**:
 
@@ -77,6 +77,7 @@ To use this tool, you need the following:
    ```bash
    python crypto_cli_tool.py
    ```
+   _(Or, if your entry point is named `cli.py`, run `python cli.py`)_
 
 ---
 
@@ -84,19 +85,20 @@ To use this tool, you need the following:
 
 The tool supports several commands. Below are examples of each feature:
 
-| **Category**             | **Command**                                       |
-| ------------------------ | ------------------------------------------------- |
-| **Get Crypto Price**     | `python cli.py price bitcoin` ✅                  |
-| **Convert Crypto**       | `python cli.py convert btc 1 `                    |
-| **Add to Portfolio**     | `python cli.py portfolio add candice bitcoin 0.5` |
-| **View Portfolio**       | `python cli.py portfolio view candice` ✅         |
-| **List All Portfolios**  | `python cli.py portfolio list` ✅                 |
-| **Set Alert**            | `python cli.py alert set bitcoin 100000`✅        |
-| **Check Alerts**         | `python cli.py alert check` ✅                    |
-| **Add User**             | `python cli.py adduser candice` ✅                |
-| **List Cryptos in DB**   | `python cli.py cryptocurrencies list`             |
-| **Update Crypto Prices** | `python cli.py cryptocurrencies update` ✅        |
-| **Help**                 | `python cli.py --help` ✅                         |
+| **Category**             | **Command**                                                                                    |
+| ------------------------ | ---------------------------------------------------------------------------------------------- |
+| **Get Crypto Price**     | `python cli.py price bitcoin` ✅                                                               |
+| **Convert Crypto**       | `python cli.py convert btc 1 usd`                                                              |
+| **Add to Portfolio**     | `python cli.py portfolio add candice bitcoin 0.5`                                              |
+|                          | _Note: You can use either the coin’s name (e.g.,"bitcoin") _<br>_or its symbol (e.g., "BTC")._ |
+| **View Portfolio**       | `python cli.py portfolio view candice` ✅                                                      |
+| **List All Portfolios**  | `python cli.py portfolio list` ✅                                                              |
+| **Set Alert**            | `python cli.py alert set bitcoin 100000` ✅                                                    |
+| **Check Alerts**         | `python cli.py alert check` ✅                                                                 |
+| **Add User**             | `python cli.py adduser candice` ✅                                                             |
+| **List Cryptos in DB**   | `python cli.py cryptocurrencies list`                                                          |
+| **Update Crypto Prices** | `python cli.py cryptocurrencies update` ✅                                                     |
+| **Help**                 | `python cli.py --help` ✅                                                                      |
 
 ---
 
@@ -133,6 +135,7 @@ This project uses **Alembic** to manage database migrations. Alembic ensures you
    ```
 
 5. Roll back to the previous migration (if needed):
+
    ```bash
    alembic downgrade -1
    ```
@@ -145,13 +148,12 @@ For more details, refer to the [Alembic documentation](https://alembic.sqlalchem
 
 ```
 crypto-cli/
-├── crypto_cli_tool.py          # Main entry point (calls `cli.py`)
 ├── cli.py                      # Handles command-line arguments and execution
 ├── models.py                   # Defines database schema (Users, Cryptos, Portfolios)
 ├── services/                   # Business logic and database operations
 │   ├── alert_service.py        # Handles price alerts
 │   ├── api_service.py          # Fetches cryptocurrency prices
-│   ├── portfolio_service.py    # Manages user portfolios
+│   ├── portfolio_service.py    # Manages user portfolios (supports search by name or symbol)
 │   ├── user_service.py         # Handles user management
 ├── utils/                      # Utility scripts
 │   ├── update_cryptos.py       # Updates cryptocurrency prices in the database
@@ -161,15 +163,16 @@ crypto-cli/
 │   ├── test_cli.py
 │   ├── test_portfolio_service.py
 │   ├── test_user_service.py
-├── alembic/                     # Database migrations (if using Alembic)
-│   ├── versions/                # Stores migration files
+├── alembic/                    # Database migrations (if using Alembic)
+│   ├── versions/               # Stores migration files
 │   ├── env.py
 │   ├── script.py.mako
-│   ├── alembic.ini              # Alembic configuration
-├── crypto_portfolio.db          # SQLite database file
-├── Pipfile                      # Pipenv dependency management
-├── README.md                    # Project documentation
-└── .gitignore                   # Files to ignore in version control
+│   ├── alembic.ini             # Alembic configuration
+├── crypto_portfolio.db         # SQLite database file
+├── Pipfile                     # Pipenv dependency management
+├── README.md                   # Project documentation
+└── .gitignore                  # Files to ignore in version control
+```
 
 ---
 
@@ -219,6 +222,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 ```
 
-```
+---
 
+Feel free to adjust any sections (e.g., installation or project structure details) to better reflect your project's specifics.
 ```
