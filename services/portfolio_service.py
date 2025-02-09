@@ -30,13 +30,14 @@ class PortfolioService:
 
         Args:
             username (str): The user's username.
-            symbol (str): The cryptocurrency symbol (e.g., BTC).
+            symbol (str): The cryptocurrency symbol or name.
             quantity (float): Amount of cryptocurrency to add.
 
         Returns:
             str: Success or error message.
         """
-        symbol = symbol.upper()  # Normalize symbol to uppercase
+        symbol = symbol.strip()  # Remove extra whitespace
+        result_symbol = None  # We'll store the crypto symbol here
 
         with get_session() as session:
             # Debug: Print all cryptos to verify if symbol exists
@@ -48,8 +49,11 @@ class PortfolioService:
             if not user:
                 return f"[bold red]Error: User '{username}' not found.[/bold red]"
 
-            # Check if cryptocurrency exists
-            crypto = session.query(Cryptocurrency).filter_by(symbol=symbol).first()
+            # Try to find cryptocurrency by symbol or name (case-insensitive for name)
+            crypto = session.query(Cryptocurrency).filter(
+                (Cryptocurrency.symbol == symbol) | (Cryptocurrency.name.ilike(symbol))
+            ).first()
+
             if not crypto:
                 return f"[bold red]Error: Cryptocurrency '{symbol}' not found.[/bold red]"
 
@@ -65,9 +69,12 @@ class PortfolioService:
                 console.log(f"[red]IntegrityError: {e}[/red]")
                 return "[bold red]Error: Could not add to portfolio due to an integrity error.[/bold red]"
 
+            # Store the crypto symbol while still inside the session.
+            result_symbol = crypto.symbol
+
         # Save backup after the transaction
         PortfolioService.save_portfolio_to_json()
-        return f"[bold green]Successfully added {quantity} {symbol} to {username}'s portfolio.[/bold green]"
+        return f"[bold green]Successfully added {quantity} {result_symbol} to {username}'s portfolio.[/bold green]"
 
     @staticmethod
     def view_user_portfolio(username):
