@@ -1,8 +1,12 @@
+import os
 from sqlalchemy.orm import declarative_base, relationship
 from sqlalchemy import Column, Integer, String, Float, ForeignKey, create_engine
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy.orm import scoped_session
+from sqlalchemy.orm import sessionmaker, scoped_session
 
+# Set the base directory and construct an absolute path for the database file
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+DATABASE_PATH = os.path.join(BASE_DIR, "crypto_portfolio.db")
+DATABASE_URL = f"sqlite:///{DATABASE_PATH}"
 
 Base = declarative_base()
 
@@ -19,7 +23,6 @@ class Cryptocurrency(Base):
     symbol = Column(String, unique=True, nullable=False)
     price = Column(Float, nullable=False)
 
-
 class Portfolio(Base):
     __tablename__ = 'portfolios'
     id = Column(Integer, primary_key=True, autoincrement=True)
@@ -30,13 +33,12 @@ class Portfolio(Base):
     user = relationship('User', back_populates='portfolios')
     cryptocurrency = relationship('Cryptocurrency')
 
-# Database connection
-DATABASE_URL = "sqlite:///crypto_portfolio.db"
+# Create the engine using the absolute path to the database file.
 engine = create_engine(DATABASE_URL, echo=True)
 
-# Create session factory
+# Create a session factory and a scoped session.
 SessionLocal = sessionmaker(bind=engine, autocommit=False, autoflush=False)
-session = scoped_session(SessionLocal)  # Scoped session prevents conflicts
+session = scoped_session(SessionLocal)
 
-# Ensure tables are created (run this once)
+# Create tables if they do not already exist.
 Base.metadata.create_all(engine)
