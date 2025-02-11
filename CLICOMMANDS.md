@@ -15,3 +15,5 @@
 | **Help**                 | `python cli.py --help` ✅                           |
 
 ---
+
+TESTING=1 pytest

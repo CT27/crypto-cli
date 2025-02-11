@@ -1,9 +1,5 @@
 {
-    "candice": {
-        "SOL": 0.5,
-        "BTC": 1.0
-    },
-    "kelly": {
-        "XRP": 2.0
+    "johndoe": {
+        "ETH": 3.0
     }
 }
