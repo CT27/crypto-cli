@@ -2726,3 +2726,198 @@ WHERE cryptocurrencies.id = ?
 2025-02-13 08:34:56,903 - INFO - Updated: Marinade Staked SOL (MSOL) - $247.73
 2025-02-13 08:34:56,903 - INFO - Updated: FLOKI (FLOKI) - $9.923e-05
 2025-02-13 08:34:56,903 - INFO - Updated: Tezos (XTZ) - $0.904843
+2025-02-24 08:17:05,966 - INFO - Updated: Bitcoin (BTC) - $95733
+2025-02-24 08:17:05,967 - INFO - Updated: Ethereum (ETH) - $2801.84
+2025-02-24 08:17:05,967 - INFO - Updated: XRP (XRP) - $2.56
+2025-02-24 08:17:05,968 - INFO - Updated: Tether (USDT) - $1.0
+2025-02-24 08:17:05,968 - INFO - Updated: BNB (BNB) - $653.72
+2025-02-24 08:17:05,968 - INFO - Updated: Solana (SOL) - $167.44
+2025-02-24 08:17:05,968 - INFO - Updated: USDC (USDC) - $0.999998
+2025-02-24 08:17:05,968 - INFO - Updated: Dogecoin (DOGE) - $0.241524
+2025-02-24 08:17:05,968 - INFO - Updated: Cardano (ADA) - $0.766496
+2025-02-24 08:17:05,968 - INFO - Updated: Lido Staked Ether (STETH) - $2796.79
+2025-02-24 08:17:05,968 - INFO - Updated: TRON (TRX) - $0.245035
+2025-02-24 08:17:05,968 - INFO - Updated: Wrapped Bitcoin (WBTC) - $95638
+2025-02-24 08:17:05,969 - INFO - Updated: Wrapped stETH (WSTETH) - $3346.44
+2025-02-24 08:17:05,969 - INFO - Updated: Chainlink (LINK) - $17.5
+2025-02-24 08:17:05,969 - INFO - Updated: Sui (SUI) - $3.33
+2025-02-24 08:17:05,969 - INFO - Updated: Avalanche (AVAX) - $24.65
+2025-02-24 08:17:05,969 - INFO - Updated: Stellar (XLM) - $0.330793
+2025-02-24 08:17:05,969 - INFO - Updated: Litecoin (LTC) - $128.37
+2025-02-24 08:17:05,969 - INFO - Updated: Toncoin (TON) - $3.76
+2025-02-24 08:17:05,969 - INFO - Updated: Shiba Inu (SHIB) - $1.541e-05
+2025-02-24 08:17:05,969 - INFO - Updated: LEO Token (LEO) - $9.76
+2025-02-24 08:17:05,969 - INFO - Updated: Hedera (HBAR) - $0.209232
+2025-02-24 08:17:05,970 - INFO - Updated: USDS (USDS) - $1.0
+2025-02-24 08:17:05,970 - INFO - Updated: MANTRA (OM) - $8.47
+2025-02-24 08:17:05,970 - INFO - Updated: WETH (WETH) - $2804.05
+2025-02-24 08:17:05,970 - INFO - Updated: Hyperliquid (HYPE) - $23.36
+2025-02-24 08:17:05,970 - INFO - Updated: Polkadot (DOT) - $4.93
+2025-02-24 08:17:05,970 - INFO - Updated: Bitcoin Cash (BCH) - $325.38
+2025-02-24 08:17:05,970 - INFO - Updated: Bitget Token (BGB) - $4.99
+2025-02-24 08:17:05,970 - INFO - Updated: Ethena USDe (USDE) - $1.0
+2025-02-24 08:17:05,970 - INFO - Updated: Wrapped eETH (WEETH) - $2970.83
+2025-02-24 08:17:05,970 - INFO - Updated: Uniswap (UNI) - $8.97
+2025-02-24 08:17:05,971 - INFO - Updated: Monero (XMR) - $234.72
+2025-02-24 08:17:05,971 - INFO - Updated: NEAR Protocol (NEAR) - $3.45
+2025-02-24 08:17:05,971 - INFO - Updated: WhiteBIT Coin (WBT) - $27.48
+2025-02-24 08:17:05,971 - INFO - Updated: Pepe (PEPE) - $9.28e-06
+2025-02-24 08:17:05,971 - INFO - Updated: Aave (AAVE) - $245.25
+2025-02-24 08:17:05,972 - INFO - Updated: Bittensor (TAO) - $432.13
+2025-02-24 08:17:05,972 - INFO - Updated: Aptos (APT) - $6.08
+2025-02-24 08:17:05,972 - INFO - Updated: Ondo (ONDO) - $1.13
+2025-02-24 08:17:05,972 - INFO - Updated: Dai (DAI) - $0.999785
+2025-02-24 08:17:05,972 - INFO - Updated: Internet Computer (ICP) - $7.01
+2025-02-24 08:17:05,972 - INFO - Updated: Official Trump (TRUMP) - $15.98
+2025-02-24 08:17:05,972 - INFO - Updated: Ethereum Classic (ETC) - $20.57
+2025-02-24 08:17:05,972 - INFO - Updated: Mantle (MNT) - $0.906661
+2025-02-24 08:17:05,972 - INFO - Updated: Tokenize Xchange (TKX) - $38.02
+2025-02-24 08:17:05,973 - INFO - Updated: OKB (OKB) - $49.04
+2025-02-24 08:17:05,973 - INFO - Updated: Gate (GT) - $23.12
+2025-02-24 08:17:05,973 - INFO - Updated: sUSDS (SUSDS) - $1.037
+2025-02-24 08:17:05,973 - INFO - Updated: Sonic (prev. FTM) (S) - $0.832725
+2025-02-24 08:17:05,973 - INFO - Updated: Coinbase Wrapped BTC (CBBTC) - $95734
+2025-02-24 08:17:05,973 - INFO - Updated: VeChain (VET) - $0.03187703
+2025-02-24 08:17:05,973 - INFO - Updated: Kaspa (KAS) - $0.097897
+2025-02-24 08:17:05,973 - INFO - Updated: POL (ex-MATIC) (POL) - $0.292495
+2025-02-24 08:17:05,974 - INFO - Updated: Cronos (CRO) - $0.084314
+2025-02-24 08:17:05,974 - INFO - Updated: Algorand (ALGO) - $0.257125
+2025-02-24 08:17:05,974 - INFO - Updated: Filecoin (FIL) - $3.4
+2025-02-24 08:17:05,974 - INFO - Updated: Render (RENDER) - $4.12
+2025-02-24 08:17:05,974 - INFO - Updated: Cosmos Hub (ATOM) - $4.85
+2025-02-24 08:17:05,974 - INFO - Updated: Arbitrum (ARB) - $0.475982
+2025-02-24 08:17:05,974 - INFO - Updated: First Digital USD (FDUSD) - $0.998274
+2025-02-24 08:17:05,974 - INFO - Updated: Jupiter (JUP) - $0.772018
+2025-02-24 08:17:05,974 - INFO - Updated: Celestia (TIA) - $3.72
+2025-02-24 08:17:05,975 - INFO - Updated: Artificial Superintelligence Alliance (FET) - $0.754462
+2025-02-24 08:17:05,975 - INFO - Updated: Lombard Staked BTC (LBTC) - $95486
+2025-02-24 08:17:05,975 - INFO - Updated: Optimism (OP) - $1.17
+2025-02-24 08:17:05,975 - INFO - Updated: Fasttoken (FTN) - $3.95
+2025-02-24 08:17:05,975 - INFO - Updated: Binance-Peg WETH (WETH) - $2799.18
+2025-02-24 08:17:05,975 - INFO - Updated: Kelp DAO Restaked ETH (RSETH) - $2907.33
+2025-02-24 08:17:05,975 - INFO - Updated: Injective (INJ) - $15.92
+2025-02-24 08:17:05,975 - INFO - Updated: Lido DAO (LDO) - $1.68
+2025-02-24 08:17:05,975 - INFO - Updated: KuCoin (KCS) - $12.04
+2025-02-24 08:17:05,975 - INFO - Updated: Solv Protocol SolvBTC (SOLVBTC) - $95462
+2025-02-24 08:17:05,976 - INFO - Updated: Rocket Pool ETH (RETH) - $3164.49
+2025-02-24 08:17:05,976 - INFO - Updated: Stacks (STX) - $0.906605
+2025-02-24 08:17:05,976 - INFO - Updated: Quant (QNT) - $93.85
+2025-02-24 08:17:05,976 - INFO - Updated: Ethena (ENA) - $0.436574
+2025-02-24 08:17:05,976 - INFO - Updated: XDC Network (XDC) - $0.084697
+2025-02-24 08:17:05,976 - INFO - Updated: NEXO (NEXO) - $1.33
+2025-02-24 08:17:05,976 - INFO - Updated: Theta Network (THETA) - $1.3
+2025-02-24 08:17:05,976 - INFO - Updated: The Graph (GRT) - $0.13586
+2025-02-24 08:17:05,976 - INFO - Updated: Sei (SEI) - $0.277825
+2025-02-24 08:17:05,976 - INFO - Updated: Binance Staked SOL (BNSOL) - $173.57
+2025-02-24 08:17:05,977 - INFO - Updated: Mantle Staked Ether (METH) - $2956.32
+2025-02-24 08:17:05,977 - INFO - Updated: Worldcoin (WLD) - $1.22
+2025-02-24 08:17:05,977 - INFO - Inserted: Maker (MKR) - $1487.34
+2025-02-24 08:17:05,977 - INFO - Updated: Immutable (IMX) - $0.688422
+2025-02-24 08:17:05,978 - INFO - Updated: Bonk (BONK) - $1.571e-05
+2025-02-24 08:17:05,978 - INFO - Updated: Raydium (RAY) - $4.18
+2025-02-24 08:17:05,978 - INFO - Updated: Movement (MOVE) - $0.483474
+2025-02-24 08:17:05,978 - INFO - Updated: Flare (FLR) - $0.01971626
+2025-02-24 08:17:05,978 - INFO - Updated: Usual USD (USD0) - $0.997919
+2025-02-24 08:17:05,979 - INFO - Updated: DeXe (DEXE) - $18.44
+2025-02-24 08:17:05,979 - INFO - Updated: JasmyCoin (JASMY) - $0.02076938
+2025-02-24 08:17:05,979 - INFO - Inserted: Telcoin (TEL) - $0.01100356
+2025-02-24 08:17:05,979 - INFO - Inserted: Story (IP) - $3.95
+2025-02-24 08:17:05,979 - INFO - Updated: Solv Protocol SolvBTC.BBN (SOLVBTC.BBN) - $94625
+2025-02-24 08:17:05,979 - INFO - Updated: EOS (EOS) - $0.637736
+2025-02-24 08:17:05,979 - INFO - Updated: GALA (GALA) - $0.02224445
+2025-02-24 08:17:05,979 - INFO - Inserted: Ethereum Name Service (ENS) - $27.47
+2025-02-24 08:17:14,961 - INFO - BEGIN (implicit)
+2025-02-24 08:17:14,967 - INFO - SELECT cryptocurrencies.id AS cryptocurrencies_id, cryptocurrencies.name AS cryptocurrencies_name, cryptocurrencies.symbol AS cryptocurrencies_symbol, cryptocurrencies.price AS cryptocurrencies_price 
+FROM cryptocurrencies
+2025-02-24 08:17:14,969 - INFO - [generated in 0.00224s] ()
+2025-02-24 08:17:14,980 - INFO - COMMIT
+2025-02-24 08:17:34,226 - INFO - BEGIN (implicit)
+2025-02-24 08:17:34,229 - INFO - SELECT users.id AS users_id, users.username AS users_username 
+FROM users
+2025-02-24 08:17:34,230 - INFO - [generated in 0.00064s] ()
+2025-02-24 08:17:34,241 - INFO - SELECT portfolios.id AS portfolios_id, portfolios.user_id AS portfolios_user_id, portfolios.crypto_id AS portfolios_crypto_id, portfolios.quantity AS portfolios_quantity 
+FROM portfolios 
+WHERE portfolios.user_id = ?
+2025-02-24 08:17:34,242 - INFO - [generated in 0.00050s] (1,)
+2025-02-24 08:17:34,246 - INFO - SELECT cryptocurrencies.id AS cryptocurrencies_id, cryptocurrencies.name AS cryptocurrencies_name, cryptocurrencies.symbol AS cryptocurrencies_symbol, cryptocurrencies.price AS cryptocurrencies_price 
+FROM cryptocurrencies 
+WHERE cryptocurrencies.id = ?
+ LIMIT ? OFFSET ?
+2025-02-24 08:17:34,251 - INFO - [generated in 0.00171s] (1, 1, 0)
+2025-02-24 08:17:34,253 - INFO - COMMIT
+2025-02-24 08:17:48,803 - INFO - BEGIN (implicit)
+2025-02-24 08:17:48,809 - INFO - SELECT users.id AS users_id, users.username AS users_username 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?
+2025-02-24 08:17:48,817 - INFO - [generated in 0.00801s] ('dash', 1, 0)
+2025-02-24 08:17:48,821 - INFO - INSERT INTO users (username) VALUES (?)
+2025-02-24 08:17:48,824 - INFO - [generated in 0.00264s] ('dash',)
+2025-02-24 08:17:48,826 - INFO - COMMIT
+2025-02-24 08:17:48,831 - INFO - BEGIN (implicit)
+2025-02-24 08:17:48,834 - INFO - SELECT users.id, users.username 
+FROM users 
+WHERE users.id = ?
+2025-02-24 08:17:48,834 - INFO - [generated in 0.00055s] (2,)
+2025-02-24 08:17:48,838 - INFO - ROLLBACK
+2025-02-24 08:18:15,137 - INFO - BEGIN (implicit)
+2025-02-24 08:18:15,141 - INFO - SELECT cryptocurrencies.id AS cryptocurrencies_id, cryptocurrencies.name AS cryptocurrencies_name, cryptocurrencies.symbol AS cryptocurrencies_symbol, cryptocurrencies.price AS cryptocurrencies_price 
+FROM cryptocurrencies
+2025-02-24 08:18:15,142 - INFO - [generated in 0.00041s] ()
+2025-02-24 08:18:15,244 - INFO - SELECT users.id AS users_id, users.username AS users_username 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?
+2025-02-24 08:18:15,245 - INFO - [generated in 0.00053s] ('dash', 1, 0)
+2025-02-24 08:18:15,250 - INFO - SELECT cryptocurrencies.id AS cryptocurrencies_id, cryptocurrencies.name AS cryptocurrencies_name, cryptocurrencies.symbol AS cryptocurrencies_symbol, cryptocurrencies.price AS cryptocurrencies_price 
+FROM cryptocurrencies 
+WHERE cryptocurrencies.symbol = ? OR lower(cryptocurrencies.name) LIKE lower(?)
+ LIMIT ? OFFSET ?
+2025-02-24 08:18:15,251 - INFO - [generated in 0.00159s] ('EOS', 'EOS', 1, 0)
+2025-02-24 08:18:15,259 - INFO - SELECT portfolios.id AS portfolios_id, portfolios.user_id AS portfolios_user_id, portfolios.crypto_id AS portfolios_crypto_id, portfolios.quantity AS portfolios_quantity 
+FROM portfolios 
+WHERE portfolios.user_id = ? AND portfolios.crypto_id = ?
+ LIMIT ? OFFSET ?
+2025-02-24 08:18:15,260 - INFO - [generated in 0.00065s] (2, 97, 1, 0)
+2025-02-24 08:18:15,266 - INFO - INSERT INTO portfolios (user_id, crypto_id, quantity) VALUES (?, ?, ?)
+2025-02-24 08:18:15,266 - INFO - [generated in 0.00079s] (2, 97, 1.0)
+2025-02-24 08:18:15,270 - INFO - COMMIT
+2025-02-24 08:18:15,275 - INFO - BEGIN (implicit)
+2025-02-24 08:18:15,276 - INFO - SELECT users.id AS users_id, users.username AS users_username 
+FROM users
+2025-02-24 08:18:15,276 - INFO - [generated in 0.00033s] ()
+2025-02-24 08:18:15,285 - INFO - SELECT portfolios.id AS portfolios_id, portfolios.user_id AS portfolios_user_id, portfolios.crypto_id AS portfolios_crypto_id, portfolios.quantity AS portfolios_quantity 
+FROM portfolios 
+WHERE portfolios.user_id = ?
+2025-02-24 08:18:15,288 - INFO - [generated in 0.00143s] (1,)
+2025-02-24 08:18:15,292 - INFO - SELECT cryptocurrencies.id AS cryptocurrencies_id, cryptocurrencies.name AS cryptocurrencies_name, cryptocurrencies.symbol AS cryptocurrencies_symbol, cryptocurrencies.price AS cryptocurrencies_price 
+FROM cryptocurrencies 
+WHERE cryptocurrencies.id = ?
+ LIMIT ? OFFSET ?
+2025-02-24 08:18:15,292 - INFO - [generated in 0.00111s] (1, 1, 0)
+2025-02-24 08:18:15,295 - INFO - SELECT portfolios.id AS portfolios_id, portfolios.user_id AS portfolios_user_id, portfolios.crypto_id AS portfolios_crypto_id, portfolios.quantity AS portfolios_quantity 
+FROM portfolios 
+WHERE portfolios.user_id = ?
+2025-02-24 08:18:15,295 - INFO - [cached since 0.009502s ago] (2,)
+2025-02-24 08:18:15,301 - INFO - SELECT cryptocurrencies.id AS cryptocurrencies_id, cryptocurrencies.name AS cryptocurrencies_name, cryptocurrencies.symbol AS cryptocurrencies_symbol, cryptocurrencies.price AS cryptocurrencies_price 
+FROM cryptocurrencies 
+WHERE cryptocurrencies.id = ?
+ LIMIT ? OFFSET ?
+2025-02-24 08:18:15,302 - INFO - [cached since 0.01028s ago] (97, 1, 0)
+2025-02-24 08:18:15,306 - INFO - COMMIT
+2025-02-24 08:18:26,598 - INFO - BEGIN (implicit)
+2025-02-24 08:18:26,605 - INFO - SELECT users.id AS users_id, users.username AS users_username 
+FROM users 
+WHERE users.username = ?
+ LIMIT ? OFFSET ?
+2025-02-24 08:18:26,605 - INFO - [generated in 0.00056s] ('dash', 1, 0)
+2025-02-24 08:18:26,622 - INFO - SELECT portfolios.id AS portfolios_id, portfolios.user_id AS portfolios_user_id, portfolios.crypto_id AS portfolios_crypto_id, portfolios.quantity AS portfolios_quantity 
+FROM portfolios 
+WHERE portfolios.user_id = ?
+2025-02-24 08:18:26,622 - INFO - [generated in 0.00079s] (2,)
+2025-02-24 08:18:26,629 - INFO - SELECT cryptocurrencies.id AS cryptocurrencies_id, cryptocurrencies.name AS cryptocurrencies_name, cryptocurrencies.symbol AS cryptocurrencies_symbol, cryptocurrencies.price AS cryptocurrencies_price 
+FROM cryptocurrencies 
+WHERE cryptocurrencies.id = ?
+ LIMIT ? OFFSET ?
+2025-02-24 08:18:26,631 - INFO - [generated in 0.00170s] (97, 1, 0)
+2025-02-24 08:18:26,642 - INFO - COMMIT

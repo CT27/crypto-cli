@@ -16,4 +16,27 @@
 
 ---
 
+#Testing commands
 TESTING=1 pytest
+
+#SQL Commands
+sqlite3 crypto_portfolio.db
+
+1. List All Users
+   SELECT \* FROM users;
+
+2. List All Cryptocurrencies
+   SELECT \* FROM cryptocurrencies;
+
+3. View All Portfolios with User and Cryptocurrency Details
+   SELECT u.username, c.name AS crypto_name, c.symbol, p.quantity
+   FROM portfolios p
+   JOIN users u ON p.user_id = u.id
+   JOIN cryptocurrencies c ON p.crypto_id = c.id;
+
+4. View a Specific User's Portfolio
+   SELECT u.username, c.name AS crypto_name, c.symbol, p.quantity
+   FROM portfolios p
+   JOIN users u ON p.user_id = u.id
+   JOIN cryptocurrencies c ON p.crypto_id = c.id
+   WHERE u.username = 'candice';
