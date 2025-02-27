@@ -50,3 +50,11 @@ alembic upgrade head
 
 rollback:
 alembic downgrade -1
+or:
+alembic downgrade {previous_revision_id}
+
+view the last applied migration:
+alembic current
+
+view the history of all migrations
+alembic history
