@@ -1,5 +1,8 @@
 {
-    "johndoe": {
-        "ETH": 3.0
+    "candice": {
+        "BTC": 1.0
+    },
+    "dash": {
+        "EOS": 1.0
     }
 }

@@ -148,30 +148,32 @@ For more details, refer to the [Alembic documentation](https://alembic.sqlalchem
 
 ```
 crypto-cli/
-├── cli.py                      # Handles command-line arguments and execution
-├── models.py                   # Defines database schema (Users, Cryptos, Portfolios)
-├── services/                   # Business logic and database operations
-│   ├── alert_service.py        # Handles price alerts
-│   ├── api_service.py          # Fetches cryptocurrency prices
-│   ├── portfolio_service.py    # Manages user portfolios (supports search by name or symbol)
-│   ├── user_service.py         # Handles user management
-├── utils/                      # Utility scripts
-│   ├── update_cryptos.py       # Updates cryptocurrency prices in the database
-├── tests/                      # Unit tests (to be implemented)
+├── alembic/
+│   ├── versions/              # This folder stores individual migration scripts
+│   ├── env.py                 # Migration environment configuration (updated with your metadata)
+│   ├── script.py.mako         # Template used to generate new migrations
+│   └── README                # (Optional) Instructions specific to Alembic
+├── alembic.ini                # Alembic configuration file (at project root)
+├── models.py                  # SQLAlchemy ORM models (User, Cryptocurrency, Portfolio, etc.)
+├── cli.py                     # Command line interface entry point
+├── services/                  # Business logic and service layer
+│   ├── alert_service.py
+│   ├── api_service.py
+│   ├── portfolio_service.py
+│   └── user_service.py
+├── utils/                     # Utility scripts (e.g., for updating crypto data)
+│   └── update_cryptos.py
+├── tests/                     # Unit and integration tests
 │   ├── test_alert_service.py
 │   ├── test_api_service.py
-│   ├── test_cli.py
 │   ├── test_portfolio_service.py
 │   ├── test_user_service.py
-├── alembic/                    # Database migrations (if using Alembic)
-│   ├── versions/               # Stores migration files
-│   ├── env.py
-│   ├── script.py.mako
-│   ├── alembic.ini             # Alembic configuration
-├── crypto_portfolio.db         # SQLite database file
-├── Pipfile                     # Pipenv dependency management
-├── README.md                   # Project documentation
-└── .gitignore                  # Files to ignore in version control
+│   └── test_cli.py
+├── crypto_portfolio.db        # SQLite database file
+├── Pipfile                    # Dependency management via Pipenv
+├── Pipfile.lock               # Locked dependency versions
+└── README.md                  # Project documentation and usage instructions
+
 ```
 
 ---
