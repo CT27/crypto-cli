@@ -3152,3 +3152,508 @@ FROM portfolios
 WHERE portfolios.user_id = ?
 2025-02-27 12:12:33,405 - INFO - [cached since 0.01972s ago] (3,)
 2025-02-27 12:12:33,411 - INFO - COMMIT
+2025-02-27 14:41:12,201 - INFO - Updated: Bitcoin (BTC) - $84914
+2025-02-27 14:41:12,202 - INFO - Updated: Ethereum (ETH) - $2336.43
+2025-02-27 14:41:12,202 - INFO - Updated: Tether (USDT) - $0.998719
+2025-02-27 14:41:12,202 - INFO - Updated: XRP (XRP) - $2.19
+2025-02-27 14:41:12,202 - INFO - Updated: BNB (BNB) - $612.54
+2025-02-27 14:41:12,202 - INFO - Updated: Solana (SOL) - $137.5
+2025-02-27 14:41:12,202 - INFO - Updated: USDC (USDC) - $0.999869
+2025-02-27 14:41:12,202 - INFO - Updated: Dogecoin (DOGE) - $0.205641
+2025-02-27 14:41:12,202 - INFO - Updated: Cardano (ADA) - $0.656519
+2025-02-27 14:41:12,202 - INFO - Updated: Lido Staked Ether (STETH) - $2335.03
+2025-02-27 14:41:12,202 - INFO - Updated: TRON (TRX) - $0.227482
+2025-02-27 14:41:12,202 - INFO - Updated: Wrapped Bitcoin (WBTC) - $84716
+2025-02-27 14:41:12,202 - INFO - Updated: Wrapped stETH (WSTETH) - $2786.08
+2025-02-27 14:41:12,203 - INFO - Updated: Chainlink (LINK) - $15.29
+2025-02-27 14:41:12,203 - INFO - Updated: Litecoin (LTC) - $124.04
+2025-02-27 14:41:12,203 - INFO - Updated: Avalanche (AVAX) - $22.27
+2025-02-27 14:41:12,203 - INFO - Updated: Sui (SUI) - $2.89
+2025-02-27 14:41:12,203 - INFO - Updated: Stellar (XLM) - $0.287824
+2025-02-27 14:41:12,203 - INFO - Updated: Toncoin (TON) - $3.49
+2025-02-27 14:41:12,203 - INFO - Updated: Shiba Inu (SHIB) - $1.442e-05
+2025-02-27 14:41:12,203 - INFO - Updated: LEO Token (LEO) - $9.09
+2025-02-27 14:41:12,203 - INFO - Updated: Hedera (HBAR) - $0.198964
+2025-02-27 14:41:12,203 - INFO - Updated: USDS (USDS) - $1.0
+2025-02-27 14:41:12,203 - INFO - Updated: Polkadot (DOT) - $4.81
+2025-02-27 14:41:12,203 - INFO - Updated: MANTRA (OM) - $7.23
+2025-02-27 14:41:12,203 - INFO - Updated: WETH (WETH) - $2334.77
+2025-02-27 14:41:12,203 - INFO - Updated: Hyperliquid (HYPE) - $20.07
+2025-02-27 14:41:12,203 - INFO - Updated: Ethena USDe (USDE) - $0.998715
+2025-02-27 14:41:12,204 - INFO - Updated: Bitcoin Cash (BCH) - $295.15
+2025-02-27 14:41:12,204 - INFO - Updated: Uniswap (UNI) - $8.04
+2025-02-27 14:41:12,204 - INFO - Updated: Wrapped eETH (WEETH) - $2469.14
+2025-02-27 14:41:12,204 - INFO - Updated: Bitget Token (BGB) - $3.94
+2025-02-27 14:41:12,204 - INFO - Updated: Monero (XMR) - $215.85
+2025-02-27 14:41:12,204 - INFO - Updated: WhiteBIT Coin (WBT) - $26.34
+2025-02-27 14:41:12,204 - INFO - Updated: NEAR Protocol (NEAR) - $3.06
+2025-02-27 14:41:12,204 - INFO - Updated: Aptos (APT) - $6.03
+2025-02-27 14:41:12,204 - INFO - Updated: Pepe (PEPE) - $8.41e-06
+2025-02-27 14:41:12,204 - INFO - Updated: Dai (DAI) - $0.999487
+2025-02-27 14:41:12,204 - INFO - Updated: Ondo (ONDO) - $0.995798
+2025-02-27 14:41:12,204 - INFO - Updated: Internet Computer (ICP) - $6.48
+2025-02-27 14:41:12,205 - INFO - Updated: Aave (AAVE) - $205.72
+2025-02-27 14:41:12,205 - INFO - Updated: Bittensor (TAO) - $358.65
+2025-02-27 14:41:12,205 - INFO - Updated: sUSDS (SUSDS) - $1.041
+2025-02-27 14:41:12,205 - INFO - Updated: Ethereum Classic (ETC) - $18.91
+2025-02-27 14:41:12,205 - INFO - Updated: OKB (OKB) - $45.37
+2025-02-27 14:41:12,205 - INFO - Updated: Official Trump (TRUMP) - $13.34
+2025-02-27 14:41:12,205 - INFO - Updated: Gate (GT) - $21.1
+2025-02-27 14:41:12,205 - INFO - Updated: Mantle (MNT) - $0.759233
+2025-02-27 14:41:12,205 - INFO - Updated: Tokenize Xchange (TKX) - $30.35
+2025-02-27 14:41:12,205 - INFO - Updated: Coinbase Wrapped BTC (CBBTC) - $84930
+2025-02-27 14:41:12,205 - INFO - Updated: POL (ex-MATIC) (POL) - $0.278223
+2025-02-27 14:41:12,205 - INFO - Updated: VeChain (VET) - $0.02832535
+2025-02-27 14:41:12,205 - INFO - Updated: Sonic (prev. FTM) (S) - $0.715704
+2025-02-27 14:41:12,205 - INFO - Updated: Kaspa (KAS) - $0.086
+2025-02-27 14:41:12,206 - INFO - Updated: First Digital USD (FDUSD) - $0.997503
+2025-02-27 14:41:12,206 - INFO - Updated: Celestia (TIA) - $3.96
+2025-02-27 14:41:12,206 - INFO - Updated: Filecoin (FIL) - $3.19
+2025-02-27 14:41:12,206 - INFO - Updated: Cronos (CRO) - $0.07452
+2025-02-27 14:41:12,206 - INFO - Updated: Algorand (ALGO) - $0.239612
+2025-02-27 14:41:12,206 - INFO - Updated: Cosmos Hub (ATOM) - $4.6
+2025-02-27 14:41:12,206 - INFO - Updated: Render (RENDER) - $3.8
+2025-02-27 14:41:12,206 - INFO - Updated: Jupiter (JUP) - $0.736306
+2025-02-27 14:41:12,206 - INFO - Updated: Optimism (OP) - $1.2
+2025-02-27 14:41:12,206 - INFO - Updated: Arbitrum (ARB) - $0.42835
+2025-02-27 14:41:12,206 - INFO - Updated: Artificial Superintelligence Alliance (FET) - $0.666667
+2025-02-27 14:41:12,206 - INFO - Updated: Lombard Staked BTC (LBTC) - $84816
+2025-02-27 14:41:12,206 - INFO - Updated: Fasttoken (FTN) - $3.95
+2025-02-27 14:41:12,207 - INFO - Updated: Story (IP) - $6.63
+2025-02-27 14:41:12,207 - INFO - Updated: KuCoin (KCS) - $12.03
+2025-02-27 14:41:12,207 - INFO - Updated: Quant (QNT) - $100.42
+2025-02-27 14:41:12,207 - INFO - Updated: Maker (MKR) - $1705.0
+2025-02-27 14:41:12,208 - INFO - Updated: Binance-Peg WETH (WETH) - $2333.27
+2025-02-27 14:41:12,208 - INFO - Updated: Ethena (ENA) - $0.432893
+2025-02-27 14:41:12,208 - INFO - Updated: Kelp DAO Restaked ETH (RSETH) - $2421.24
+2025-02-27 14:41:12,208 - INFO - Updated: Solv Protocol SolvBTC (SOLVBTC) - $84665
+2025-02-27 14:41:12,208 - INFO - Updated: Injective (INJ) - $13.23
+2025-02-27 14:41:12,208 - INFO - Updated: XDC Network (XDC) - $0.080909
+2025-02-27 14:41:12,208 - INFO - Updated: Sei (SEI) - $0.26892
+2025-02-27 14:41:12,208 - INFO - Updated: Immutable (IMX) - $0.70705
+2025-02-27 14:41:12,208 - INFO - Updated: Stacks (STX) - $0.81145
+2025-02-27 14:41:12,208 - INFO - Updated: Lido DAO (LDO) - $1.37
+2025-02-27 14:41:12,208 - INFO - Updated: NEXO (NEXO) - $1.2
+2025-02-27 14:41:12,208 - INFO - Updated: Worldcoin (WLD) - $1.13
+2025-02-27 14:41:12,208 - INFO - Updated: Theta Network (THETA) - $1.19
+2025-02-27 14:41:12,208 - INFO - Updated: Rocket Pool ETH (RETH) - $2636.41
+2025-02-27 14:41:12,209 - INFO - Updated: The Graph (GRT) - $0.122374
+2025-02-27 14:41:12,209 - INFO - Updated: DeXe (DEXE) - $19.94
+2025-02-27 14:41:12,209 - INFO - Updated: Movement (MOVE) - $0.470612
+2025-02-27 14:41:12,209 - INFO - Updated: Usual USD (USD0) - $0.997275
+2025-02-27 14:41:12,209 - INFO - Updated: Mantle Staked Ether (METH) - $2468.87
+2025-02-27 14:41:12,209 - INFO - Updated: Bonk (BONK) - $1.362e-05
+2025-02-27 14:41:12,209 - INFO - Updated: Binance Staked SOL (BNSOL) - $142.22
+2025-02-27 14:41:12,209 - INFO - Updated: Flare (FLR) - $0.01701055
+2025-02-27 14:41:12,209 - INFO - Updated: JasmyCoin (JASMY) - $0.01886115
+2025-02-27 14:41:12,209 - INFO - Updated: Solv Protocol SolvBTC.BBN (SOLVBTC.BBN) - $84167
+2025-02-27 14:41:12,209 - INFO - Updated: GALA (GALA) - $0.01991444
+2025-02-27 14:41:12,209 - INFO - Updated: EOS (EOS) - $0.562958
+2025-02-27 14:41:12,209 - INFO - Updated: FLOKI (FLOKI) - $8.449e-05
+2025-02-27 14:41:12,209 - INFO - Updated: Berachain (BERA) - $7.45
+2025-02-27 14:41:12,209 - INFO - Updated: Telcoin (TEL) - $0.00879196
+2025-02-27 14:41:25,895 - INFO - BEGIN (implicit)
+2025-02-27 14:41:25,897 - INFO - SELECT cryptocurrencies.id AS cryptocurrencies_id, cryptocurrencies.name AS cryptocurrencies_name, cryptocurrencies.symbol AS cryptocurrencies_symbol, cryptocurrencies.price AS cryptocurrencies_price 
+FROM cryptocurrencies
+2025-02-27 14:41:25,898 - INFO - [generated in 0.00032s] ()
+2025-02-27 14:41:25,905 - INFO - COMMIT
+2025-02-27 15:03:17,332 - INFO - Updated: Bitcoin (BTC) - $85090
+2025-02-27 15:03:17,334 - INFO - Updated: Ethereum (ETH) - $2330.2
+2025-02-27 15:03:17,334 - INFO - Updated: Tether (USDT) - $0.998817
+2025-02-27 15:03:17,334 - INFO - Updated: XRP (XRP) - $2.2
+2025-02-27 15:03:17,334 - INFO - Updated: BNB (BNB) - $612.61
+2025-02-27 15:03:17,334 - INFO - Updated: Solana (SOL) - $138.42
+2025-02-27 15:03:17,334 - INFO - Updated: USDC (USDC) - $0.9999
+2025-02-27 15:03:17,334 - INFO - Updated: Dogecoin (DOGE) - $0.206078
+2025-02-27 15:03:17,334 - INFO - Updated: Cardano (ADA) - $0.657064
+2025-02-27 15:03:17,334 - INFO - Updated: Lido Staked Ether (STETH) - $2333.38
+2025-02-27 15:03:17,334 - INFO - Updated: TRON (TRX) - $0.227281
+2025-02-27 15:03:17,334 - INFO - Updated: Wrapped Bitcoin (WBTC) - $84948
+2025-02-27 15:03:17,334 - INFO - Updated: Wrapped stETH (WSTETH) - $2777.47
+2025-02-27 15:03:17,335 - INFO - Updated: Chainlink (LINK) - $15.29
+2025-02-27 15:03:17,335 - INFO - Updated: Litecoin (LTC) - $123.85
+2025-02-27 15:03:17,335 - INFO - Updated: Avalanche (AVAX) - $22.33
+2025-02-27 15:03:17,335 - INFO - Updated: Sui (SUI) - $2.9
+2025-02-27 15:03:17,335 - INFO - Updated: Stellar (XLM) - $0.287946
+2025-02-27 15:03:17,335 - INFO - Updated: Toncoin (TON) - $3.49
+2025-02-27 15:03:17,335 - INFO - Updated: Shiba Inu (SHIB) - $1.443e-05
+2025-02-27 15:03:17,335 - INFO - Updated: LEO Token (LEO) - $9.07
+2025-02-27 15:03:17,335 - INFO - Updated: Hedera (HBAR) - $0.199026
+2025-02-27 15:03:17,335 - INFO - Updated: USDS (USDS) - $1.0
+2025-02-27 15:03:17,335 - INFO - Updated: Polkadot (DOT) - $4.84
+2025-02-27 15:03:17,335 - INFO - Updated: MANTRA (OM) - $7.24
+2025-02-27 15:03:17,335 - INFO - Updated: WETH (WETH) - $2326.02
+2025-02-27 15:03:17,335 - INFO - Updated: Hyperliquid (HYPE) - $20.25
+2025-02-27 15:03:17,336 - INFO - Updated: Ethena USDe (USDE) - $0.999241
+2025-02-27 15:03:17,336 - INFO - Updated: Bitcoin Cash (BCH) - $295.2
+2025-02-27 15:03:17,336 - INFO - Updated: Uniswap (UNI) - $8.02
+2025-02-27 15:03:17,336 - INFO - Updated: Wrapped eETH (WEETH) - $2465.78
+2025-02-27 15:03:17,336 - INFO - Updated: Bitget Token (BGB) - $3.94
+2025-02-27 15:03:17,336 - INFO - Updated: Monero (XMR) - $215.74
+2025-02-27 15:03:17,336 - INFO - Updated: WhiteBIT Coin (WBT) - $26.33
+2025-02-27 15:03:17,336 - INFO - Updated: Aptos (APT) - $6.2
+2025-02-27 15:03:17,336 - INFO - Updated: NEAR Protocol (NEAR) - $3.07
+2025-02-27 15:03:17,336 - INFO - Updated: Pepe (PEPE) - $8.43e-06
+2025-02-27 15:03:17,336 - INFO - Updated: Dai (DAI) - $0.99963
+2025-02-27 15:03:17,336 - INFO - Updated: Ondo (ONDO) - $0.993003
+2025-02-27 15:03:17,336 - INFO - Updated: Internet Computer (ICP) - $6.5
+2025-02-27 15:03:17,337 - INFO - Updated: Aave (AAVE) - $205.49
+2025-02-27 15:03:17,337 - INFO - Updated: Bittensor (TAO) - $360.14
+2025-02-27 15:03:17,337 - INFO - Updated: sUSDS (SUSDS) - $1.038
+2025-02-27 15:03:17,337 - INFO - Updated: Ethereum Classic (ETC) - $18.91
+2025-02-27 15:03:17,337 - INFO - Updated: OKB (OKB) - $45.28
+2025-02-27 15:03:17,337 - INFO - Updated: Gate (GT) - $21.24
+2025-02-27 15:03:17,337 - INFO - Updated: Official Trump (TRUMP) - $13.31
+2025-02-27 15:03:17,337 - INFO - Updated: Mantle (MNT) - $0.758587
+2025-02-27 15:03:17,337 - INFO - Updated: Tokenize Xchange (TKX) - $30.34
+2025-02-27 15:03:17,337 - INFO - Updated: Coinbase Wrapped BTC (CBBTC) - $85152
+2025-02-27 15:03:17,337 - INFO - Updated: POL (ex-MATIC) (POL) - $0.278586
+2025-02-27 15:03:17,337 - INFO - Updated: VeChain (VET) - $0.02840238
+2025-02-27 15:03:17,337 - INFO - Updated: Sonic (prev. FTM) (S) - $0.719323
+2025-02-27 15:03:17,337 - INFO - Updated: Kaspa (KAS) - $0.085939
+2025-02-27 15:03:17,338 - INFO - Updated: First Digital USD (FDUSD) - $1.0
+2025-02-27 15:03:17,338 - INFO - Updated: Celestia (TIA) - $3.95
+2025-02-27 15:03:17,338 - INFO - Updated: Cronos (CRO) - $0.074638
+2025-02-27 15:03:17,338 - INFO - Updated: Filecoin (FIL) - $3.19
+2025-02-27 15:03:17,338 - INFO - Updated: Algorand (ALGO) - $0.2394
+2025-02-27 15:03:17,338 - INFO - Updated: Cosmos Hub (ATOM) - $4.62
+2025-02-27 15:03:17,338 - INFO - Updated: Render (RENDER) - $3.81
+2025-02-27 15:03:17,338 - INFO - Updated: Jupiter (JUP) - $0.737785
+2025-02-27 15:03:17,338 - INFO - Updated: Optimism (OP) - $1.19
+2025-02-27 15:03:17,338 - INFO - Updated: Arbitrum (ARB) - $0.428322
+2025-02-27 15:03:17,338 - INFO - Updated: Artificial Superintelligence Alliance (FET) - $0.666983
+2025-02-27 15:03:17,338 - INFO - Updated: Lombard Staked BTC (LBTC) - $85213
+2025-02-27 15:03:17,338 - INFO - Updated: Fasttoken (FTN) - $3.94
+2025-02-27 15:03:17,338 - INFO - Updated: Story (IP) - $6.69
+2025-02-27 15:03:17,339 - INFO - Updated: KuCoin (KCS) - $12.01
+2025-02-27 15:03:17,339 - INFO - Updated: Quant (QNT) - $100.41
+2025-02-27 15:03:17,339 - INFO - Updated: Maker (MKR) - $1702.17
+2025-02-27 15:03:17,339 - INFO - Updated: Binance-Peg WETH (WETH) - $2325.7
+2025-02-27 15:03:17,339 - INFO - Updated: Ethena (ENA) - $0.433656
+2025-02-27 15:03:17,339 - INFO - Updated: Kelp DAO Restaked ETH (RSETH) - $2416.56
+2025-02-27 15:03:17,339 - INFO - Updated: Solv Protocol SolvBTC (SOLVBTC) - $84807
+2025-02-27 15:03:17,339 - INFO - Updated: Injective (INJ) - $13.29
+2025-02-27 15:03:17,339 - INFO - Updated: XDC Network (XDC) - $0.080526
+2025-02-27 15:03:17,339 - INFO - Updated: Sei (SEI) - $0.270362
+2025-02-27 15:03:17,339 - INFO - Updated: Immutable (IMX) - $0.708383
+2025-02-27 15:03:17,339 - INFO - Updated: Stacks (STX) - $0.813027
+2025-02-27 15:03:17,339 - INFO - Updated: Lido DAO (LDO) - $1.37
+2025-02-27 15:03:17,339 - INFO - Updated: Worldcoin (WLD) - $1.14
+2025-02-27 15:03:17,339 - INFO - Updated: NEXO (NEXO) - $1.2
+2025-02-27 15:03:17,340 - INFO - Updated: Theta Network (THETA) - $1.19
+2025-02-27 15:03:17,340 - INFO - Updated: The Graph (GRT) - $0.122383
+2025-02-27 15:03:17,340 - INFO - Updated: Rocket Pool ETH (RETH) - $2624.87
+2025-02-27 15:03:17,340 - INFO - Updated: DeXe (DEXE) - $19.91
+2025-02-27 15:03:17,340 - INFO - Updated: Movement (MOVE) - $0.468067
+2025-02-27 15:03:17,340 - INFO - Updated: Usual USD (USD0) - $0.997383
+2025-02-27 15:03:17,340 - INFO - Updated: Mantle Staked Ether (METH) - $2460.43
+2025-02-27 15:03:17,340 - INFO - Updated: Bonk (BONK) - $1.369e-05
+2025-02-27 15:03:17,340 - INFO - Updated: Binance Staked SOL (BNSOL) - $143.07
+2025-02-27 15:03:17,340 - INFO - Updated: Flare (FLR) - $0.01699219
+2025-02-27 15:03:17,340 - INFO - Updated: JasmyCoin (JASMY) - $0.01888439
+2025-02-27 15:03:17,340 - INFO - Updated: Solv Protocol SolvBTC.BBN (SOLVBTC.BBN) - $84298
+2025-02-27 15:03:17,340 - INFO - Updated: GALA (GALA) - $0.01998063
+2025-02-27 15:03:17,340 - INFO - Updated: EOS (EOS) - $0.564478
+2025-02-27 15:03:17,341 - INFO - Updated: FLOKI (FLOKI) - $8.467e-05
+2025-02-27 15:03:17,341 - INFO - Updated: Berachain (BERA) - $7.43
+2025-02-27 15:03:17,341 - INFO - Updated: Telcoin (TEL) - $0.00878242
+2025-02-27 15:04:51,113 - INFO - Updated: Bitcoin (BTC) - $85016
+2025-02-27 15:04:51,115 - INFO - Updated: Ethereum (ETH) - $2327.45
+2025-02-27 15:04:51,115 - INFO - Updated: Tether (USDT) - $0.998819
+2025-02-27 15:04:51,115 - INFO - Updated: XRP (XRP) - $2.2
+2025-02-27 15:04:51,115 - INFO - Updated: BNB (BNB) - $612.07
+2025-02-27 15:04:51,115 - INFO - Updated: Solana (SOL) - $138.29
+2025-02-27 15:04:51,115 - INFO - Updated: USDC (USDC) - $0.9999
+2025-02-27 15:04:51,115 - INFO - Updated: Dogecoin (DOGE) - $0.205861
+2025-02-27 15:04:51,115 - INFO - Updated: Cardano (ADA) - $0.656621
+2025-02-27 15:04:51,115 - INFO - Updated: Lido Staked Ether (STETH) - $2331.36
+2025-02-27 15:04:51,115 - INFO - Updated: TRON (TRX) - $0.227084
+2025-02-27 15:04:51,116 - INFO - Updated: Wrapped Bitcoin (WBTC) - $84915
+2025-02-27 15:04:51,116 - INFO - Updated: Wrapped stETH (WSTETH) - $2778.79
+2025-02-27 15:04:51,116 - INFO - Updated: Chainlink (LINK) - $15.27
+2025-02-27 15:04:51,116 - INFO - Updated: Litecoin (LTC) - $123.69
+2025-02-27 15:04:51,116 - INFO - Updated: Avalanche (AVAX) - $22.3
+2025-02-27 15:04:51,116 - INFO - Updated: Sui (SUI) - $2.9
+2025-02-27 15:04:51,116 - INFO - Updated: Stellar (XLM) - $0.287739
+2025-02-27 15:04:51,116 - INFO - Updated: Toncoin (TON) - $3.49
+2025-02-27 15:04:51,116 - INFO - Updated: Shiba Inu (SHIB) - $1.441e-05
+2025-02-27 15:04:51,116 - INFO - Updated: LEO Token (LEO) - $9.06
+2025-02-27 15:04:51,116 - INFO - Updated: Hedera (HBAR) - $0.198799
+2025-02-27 15:04:51,116 - INFO - Updated: USDS (USDS) - $0.999943
+2025-02-27 15:04:51,116 - INFO - Updated: Polkadot (DOT) - $4.84
+2025-02-27 15:04:51,116 - INFO - Updated: MANTRA (OM) - $7.23
+2025-02-27 15:04:51,117 - INFO - Updated: WETH (WETH) - $2326.83
+2025-02-27 15:04:51,117 - INFO - Updated: Hyperliquid (HYPE) - $20.2
+2025-02-27 15:04:51,117 - INFO - Updated: Ethena USDe (USDE) - $0.999033
+2025-02-27 15:04:51,117 - INFO - Updated: Bitcoin Cash (BCH) - $294.91
+2025-02-27 15:04:51,117 - INFO - Updated: Uniswap (UNI) - $8.02
+2025-02-27 15:04:51,117 - INFO - Updated: Wrapped eETH (WEETH) - $2466.17
+2025-02-27 15:04:51,117 - INFO - Updated: Bitget Token (BGB) - $3.94
+2025-02-27 15:04:51,117 - INFO - Updated: Monero (XMR) - $215.49
+2025-02-27 15:04:51,117 - INFO - Updated: WhiteBIT Coin (WBT) - $26.31
+2025-02-27 15:04:51,117 - INFO - Updated: Aptos (APT) - $6.18
+2025-02-27 15:04:51,117 - INFO - Updated: NEAR Protocol (NEAR) - $3.06
+2025-02-27 15:04:51,117 - INFO - Updated: Pepe (PEPE) - $8.42e-06
+2025-02-27 15:04:51,117 - INFO - Updated: Dai (DAI) - $1.0
+2025-02-27 15:04:51,117 - INFO - Updated: Ondo (ONDO) - $0.991772
+2025-02-27 15:04:51,118 - INFO - Updated: Internet Computer (ICP) - $6.5
+2025-02-27 15:04:51,118 - INFO - Updated: Aave (AAVE) - $205.21
+2025-02-27 15:04:51,118 - INFO - Updated: Bittensor (TAO) - $359.79
+2025-02-27 15:04:51,118 - INFO - Updated: sUSDS (SUSDS) - $1.038
+2025-02-27 15:04:51,118 - INFO - Updated: Ethereum Classic (ETC) - $18.89
+2025-02-27 15:04:51,118 - INFO - Updated: OKB (OKB) - $45.29
+2025-02-27 15:04:51,118 - INFO - Updated: Gate (GT) - $21.26
+2025-02-27 15:04:51,118 - INFO - Updated: Official Trump (TRUMP) - $13.3
+2025-02-27 15:04:51,118 - INFO - Updated: Mantle (MNT) - $0.758561
+2025-02-27 15:04:51,118 - INFO - Updated: Tokenize Xchange (TKX) - $30.32
+2025-02-27 15:04:51,118 - INFO - Updated: Coinbase Wrapped BTC (CBBTC) - $85090
+2025-02-27 15:04:51,118 - INFO - Updated: POL (ex-MATIC) (POL) - $0.278323
+2025-02-27 15:04:51,118 - INFO - Updated: VeChain (VET) - $0.02836256
+2025-02-27 15:04:51,118 - INFO - Updated: Sonic (prev. FTM) (S) - $0.719876
+2025-02-27 15:04:51,118 - INFO - Updated: Kaspa (KAS) - $0.085932
+2025-02-27 15:04:51,119 - INFO - Updated: First Digital USD (FDUSD) - $0.999689
+2025-02-27 15:04:51,119 - INFO - Updated: Celestia (TIA) - $3.94
+2025-02-27 15:04:51,119 - INFO - Updated: Cronos (CRO) - $0.074557
+2025-02-27 15:04:51,119 - INFO - Updated: Filecoin (FIL) - $3.19
+2025-02-27 15:04:51,119 - INFO - Updated: Algorand (ALGO) - $0.238886
+2025-02-27 15:04:51,119 - INFO - Updated: Cosmos Hub (ATOM) - $4.61
+2025-02-27 15:04:51,119 - INFO - Updated: Render (RENDER) - $3.8
+2025-02-27 15:04:51,119 - INFO - Updated: Jupiter (JUP) - $0.736962
+2025-02-27 15:04:51,119 - INFO - Updated: Optimism (OP) - $1.19
+2025-02-27 15:04:51,119 - INFO - Updated: Arbitrum (ARB) - $0.428203
+2025-02-27 15:04:51,119 - INFO - Updated: Artificial Superintelligence Alliance (FET) - $0.666563
+2025-02-27 15:04:51,119 - INFO - Updated: Lombard Staked BTC (LBTC) - $85125
+2025-02-27 15:04:51,119 - INFO - Updated: Fasttoken (FTN) - $3.94
+2025-02-27 15:04:51,119 - INFO - Updated: Story (IP) - $6.7
+2025-02-27 15:04:51,120 - INFO - Updated: KuCoin (KCS) - $12.0
+2025-02-27 15:04:51,120 - INFO - Updated: Quant (QNT) - $100.29
+2025-02-27 15:04:51,120 - INFO - Updated: Maker (MKR) - $1699.54
+2025-02-27 15:04:51,120 - INFO - Updated: Binance-Peg WETH (WETH) - $2326.57
+2025-02-27 15:04:51,120 - INFO - Updated: Ethena (ENA) - $0.432472
+2025-02-27 15:04:51,120 - INFO - Updated: Kelp DAO Restaked ETH (RSETH) - $2414.08
+2025-02-27 15:04:51,120 - INFO - Updated: Solv Protocol SolvBTC (SOLVBTC) - $84804
+2025-02-27 15:04:51,120 - INFO - Updated: Injective (INJ) - $13.28
+2025-02-27 15:04:51,120 - INFO - Updated: XDC Network (XDC) - $0.080588
+2025-02-27 15:04:51,120 - INFO - Updated: Sei (SEI) - $0.270265
+2025-02-27 15:04:51,120 - INFO - Updated: Immutable (IMX) - $0.707966
+2025-02-27 15:04:51,120 - INFO - Updated: Stacks (STX) - $0.812144
+2025-02-27 15:04:51,121 - INFO - Updated: Lido DAO (LDO) - $1.37
+2025-02-27 15:04:51,121 - INFO - Updated: NEXO (NEXO) - $1.2
+2025-02-27 15:04:51,121 - INFO - Updated: Worldcoin (WLD) - $1.13
+2025-02-27 15:04:51,121 - INFO - Updated: Theta Network (THETA) - $1.19
+2025-02-27 15:04:51,121 - INFO - Updated: The Graph (GRT) - $0.12229
+2025-02-27 15:04:51,121 - INFO - Updated: Rocket Pool ETH (RETH) - $2624.87
+2025-02-27 15:04:51,121 - INFO - Updated: DeXe (DEXE) - $19.9
+2025-02-27 15:04:51,121 - INFO - Updated: Movement (MOVE) - $0.467539
+2025-02-27 15:04:51,121 - INFO - Updated: Usual USD (USD0) - $0.997383
+2025-02-27 15:04:51,121 - INFO - Updated: Mantle Staked Ether (METH) - $2460.03
+2025-02-27 15:04:51,121 - INFO - Updated: Bonk (BONK) - $1.368e-05
+2025-02-27 15:04:51,121 - INFO - Updated: Binance Staked SOL (BNSOL) - $142.91
+2025-02-27 15:04:51,121 - INFO - Updated: Flare (FLR) - $0.01699891
+2025-02-27 15:04:51,121 - INFO - Updated: JasmyCoin (JASMY) - $0.01886335
+2025-02-27 15:04:51,122 - INFO - Updated: Solv Protocol SolvBTC.BBN (SOLVBTC.BBN) - $84318
+2025-02-27 15:04:51,122 - INFO - Updated: GALA (GALA) - $0.01995101
+2025-02-27 15:04:51,122 - INFO - Updated: EOS (EOS) - $0.563844
+2025-02-27 15:04:51,122 - INFO - Updated: FLOKI (FLOKI) - $8.458e-05
+2025-02-27 15:04:51,122 - INFO - Updated: Berachain (BERA) - $7.43
+2025-02-27 15:04:51,122 - INFO - Updated: Telcoin (TEL) - $0.00876773
+2025-02-27 16:08:22,985 - INFO - Updated: Bitcoin (BTC) - $85203
+2025-02-27 16:08:22,986 - INFO - Updated: Ethereum (ETH) - $2316.1
+2025-02-27 16:08:22,986 - INFO - Updated: Tether (USDT) - $0.998799
+2025-02-27 16:08:22,986 - INFO - Updated: XRP (XRP) - $2.19
+2025-02-27 16:08:22,986 - INFO - Updated: BNB (BNB) - $612.46
+2025-02-27 16:08:22,986 - INFO - Updated: Solana (SOL) - $138.15
+2025-02-27 16:08:22,986 - INFO - Updated: USDC (USDC) - $0.9999
+2025-02-27 16:08:22,986 - INFO - Updated: Dogecoin (DOGE) - $0.205681
+2025-02-27 16:08:22,986 - INFO - Updated: Cardano (ADA) - $0.656707
+2025-02-27 16:08:22,987 - INFO - Updated: Lido Staked Ether (STETH) - $2327.54
+2025-02-27 16:08:22,987 - INFO - Updated: TRON (TRX) - $0.227517
+2025-02-27 16:08:22,987 - INFO - Updated: Wrapped Bitcoin (WBTC) - $85052
+2025-02-27 16:08:22,987 - INFO - Updated: Wrapped stETH (WSTETH) - $2761.35
+2025-02-27 16:08:22,987 - INFO - Updated: Chainlink (LINK) - $15.23
+2025-02-27 16:08:22,987 - INFO - Updated: Litecoin (LTC) - $123.16
+2025-02-27 16:08:22,987 - INFO - Updated: Avalanche (AVAX) - $22.35
+2025-02-27 16:08:22,987 - INFO - Updated: Sui (SUI) - $2.92
+2025-02-27 16:08:22,987 - INFO - Updated: Stellar (XLM) - $0.287747
+2025-02-27 16:08:22,987 - INFO - Updated: Toncoin (TON) - $3.47
+2025-02-27 16:08:22,987 - INFO - Updated: Shiba Inu (SHIB) - $1.441e-05
+2025-02-27 16:08:22,987 - INFO - Updated: LEO Token (LEO) - $9.09
+2025-02-27 16:08:22,987 - INFO - Updated: Hedera (HBAR) - $0.197936
+2025-02-27 16:08:22,987 - INFO - Updated: USDS (USDS) - $0.999366
+2025-02-27 16:08:22,988 - INFO - Updated: Polkadot (DOT) - $4.85
+2025-02-27 16:08:22,988 - INFO - Updated: MANTRA (OM) - $7.26
+2025-02-27 16:08:22,988 - INFO - Updated: WETH (WETH) - $2312.49
+2025-02-27 16:08:22,988 - INFO - Updated: Hyperliquid (HYPE) - $20.21
+2025-02-27 16:08:22,988 - INFO - Updated: Ethena USDe (USDE) - $0.999145
+2025-02-27 16:08:22,988 - INFO - Updated: Bitcoin Cash (BCH) - $295.39
+2025-02-27 16:08:22,988 - INFO - Updated: Uniswap (UNI) - $8.01
+2025-02-27 16:08:22,988 - INFO - Updated: Wrapped eETH (WEETH) - $2455.5
+2025-02-27 16:08:22,988 - INFO - Updated: Bitget Token (BGB) - $3.9
+2025-02-27 16:08:22,988 - INFO - Updated: Monero (XMR) - $214.52
+2025-02-27 16:08:22,988 - INFO - Updated: WhiteBIT Coin (WBT) - $26.39
+2025-02-27 16:08:22,988 - INFO - Updated: NEAR Protocol (NEAR) - $3.05
+2025-02-27 16:08:22,988 - INFO - Updated: Aptos (APT) - $6.1
+2025-02-27 16:08:22,988 - INFO - Updated: Pepe (PEPE) - $8.36e-06
+2025-02-27 16:08:22,988 - INFO - Updated: Dai (DAI) - $0.999773
+2025-02-27 16:08:22,989 - INFO - Updated: Internet Computer (ICP) - $6.51
+2025-02-27 16:08:22,989 - INFO - Updated: Ondo (ONDO) - $0.988308
+2025-02-27 16:08:22,989 - INFO - Updated: Aave (AAVE) - $204.22
+2025-02-27 16:08:22,989 - INFO - Updated: Bittensor (TAO) - $362.23
+2025-02-27 16:08:22,989 - INFO - Updated: sUSDS (SUSDS) - $1.039
+2025-02-27 16:08:22,989 - INFO - Updated: Ethereum Classic (ETC) - $18.86
+2025-02-27 16:08:22,989 - INFO - Updated: OKB (OKB) - $44.96
+2025-02-27 16:08:22,989 - INFO - Updated: Gate (GT) - $21.17
+2025-02-27 16:08:22,989 - INFO - Updated: Official Trump (TRUMP) - $13.24
+2025-02-27 16:08:22,989 - INFO - Updated: Mantle (MNT) - $0.759004
+2025-02-27 16:08:22,989 - INFO - Updated: Tokenize Xchange (TKX) - $30.38
+2025-02-27 16:08:22,989 - INFO - Updated: Coinbase Wrapped BTC (CBBTC) - $85129
+2025-02-27 16:08:22,989 - INFO - Updated: POL (ex-MATIC) (POL) - $0.27729
+2025-02-27 16:08:22,989 - INFO - Updated: VeChain (VET) - $0.0284543
+2025-02-27 16:08:22,990 - INFO - Updated: Sonic (prev. FTM) (S) - $0.716201
+2025-02-27 16:08:22,990 - INFO - Updated: Kaspa (KAS) - $0.085832
+2025-02-27 16:08:22,990 - INFO - Updated: First Digital USD (FDUSD) - $0.999155
+2025-02-27 16:08:22,990 - INFO - Updated: Celestia (TIA) - $3.87
+2025-02-27 16:08:22,990 - INFO - Updated: Filecoin (FIL) - $3.19
+2025-02-27 16:08:22,990 - INFO - Updated: Cronos (CRO) - $0.074403
+2025-02-27 16:08:22,990 - INFO - Updated: Algorand (ALGO) - $0.239048
+2025-02-27 16:08:22,990 - INFO - Updated: Cosmos Hub (ATOM) - $4.61
+2025-02-27 16:08:22,990 - INFO - Updated: Render (RENDER) - $3.79
+2025-02-27 16:08:22,990 - INFO - Updated: Jupiter (JUP) - $0.738257
+2025-02-27 16:08:22,990 - INFO - Updated: Optimism (OP) - $1.19
+2025-02-27 16:08:22,990 - INFO - Updated: Arbitrum (ARB) - $0.427219
+2025-02-27 16:08:22,990 - INFO - Updated: Artificial Superintelligence Alliance (FET) - $0.667193
+2025-02-27 16:08:22,990 - INFO - Updated: Lombard Staked BTC (LBTC) - $85018
+2025-02-27 16:08:22,990 - INFO - Updated: Fasttoken (FTN) - $3.96
+2025-02-27 16:08:22,991 - INFO - Updated: Story (IP) - $6.58
+2025-02-27 16:08:22,991 - INFO - Updated: KuCoin (KCS) - $11.97
+2025-02-27 16:08:22,991 - INFO - Updated: Quant (QNT) - $100.83
+2025-02-27 16:08:22,991 - INFO - Updated: Maker (MKR) - $1674.11
+2025-02-27 16:08:22,991 - INFO - Updated: Binance-Peg WETH (WETH) - $2315.09
+2025-02-27 16:08:22,991 - INFO - Updated: Ethena (ENA) - $0.425449
+2025-02-27 16:08:22,991 - INFO - Updated: Kelp DAO Restaked ETH (RSETH) - $2398.44
+2025-02-27 16:08:22,991 - INFO - Updated: Injective (INJ) - $13.38
+2025-02-27 16:08:22,991 - INFO - Updated: Solv Protocol SolvBTC (SOLVBTC) - $84895
+2025-02-27 16:08:22,991 - INFO - Updated: Immutable (IMX) - $0.709091
+2025-02-27 16:08:22,991 - INFO - Updated: Sei (SEI) - $0.268736
+2025-02-27 16:08:22,992 - INFO - Updated: XDC Network (XDC) - $0.079709
+2025-02-27 16:08:22,992 - INFO - Updated: Stacks (STX) - $0.820407
+2025-02-27 16:08:22,992 - INFO - Updated: Lido DAO (LDO) - $1.36
+2025-02-27 16:08:22,992 - INFO - Updated: NEXO (NEXO) - $1.2
+2025-02-27 16:08:22,992 - INFO - Updated: Worldcoin (WLD) - $1.13
+2025-02-27 16:08:22,992 - INFO - Updated: Theta Network (THETA) - $1.19
+2025-02-27 16:08:22,992 - INFO - Updated: The Graph (GRT) - $0.122571
+2025-02-27 16:08:22,992 - INFO - Updated: Rocket Pool ETH (RETH) - $2612.67
+2025-02-27 16:08:22,992 - INFO - Updated: DeXe (DEXE) - $19.82
+2025-02-27 16:08:22,992 - INFO - Updated: Movement (MOVE) - $0.467399
+2025-02-27 16:08:22,992 - INFO - Updated: Usual USD (USD0) - $0.997384
+2025-02-27 16:08:22,992 - INFO - Updated: Bonk (BONK) - $1.365e-05
+2025-02-27 16:08:22,992 - INFO - Updated: Mantle Staked Ether (METH) - $2450.54
+2025-02-27 16:08:22,992 - INFO - Updated: Binance Staked SOL (BNSOL) - $142.71
+2025-02-27 16:08:22,993 - INFO - Updated: Flare (FLR) - $0.01698944
+2025-02-27 16:08:22,993 - INFO - Updated: JasmyCoin (JASMY) - $0.01882329
+2025-02-27 16:08:22,993 - INFO - Updated: Solv Protocol SolvBTC.BBN (SOLVBTC.BBN) - $84299
+2025-02-27 16:08:22,993 - INFO - Updated: GALA (GALA) - $0.01992993
+2025-02-27 16:08:22,993 - INFO - Updated: EOS (EOS) - $0.563937
+2025-02-27 16:08:22,993 - INFO - Updated: FLOKI (FLOKI) - $8.444e-05
+2025-02-27 16:08:22,993 - INFO - Updated: Telcoin (TEL) - $0.00895568
+2025-02-27 16:08:22,993 - INFO - Updated: Tezos (XTZ) - $0.771711
+2025-02-27 16:18:15,284 - INFO - Updated: Bitcoin (BTC) - $85535
+2025-02-27 16:18:15,286 - INFO - Updated: Ethereum (ETH) - $2327.96
+2025-02-27 16:18:15,286 - INFO - Updated: Tether (USDT) - $0.998803
+2025-02-27 16:18:15,286 - INFO - Updated: XRP (XRP) - $2.2
+2025-02-27 16:18:15,286 - INFO - Updated: BNB (BNB) - $613.35
+2025-02-27 16:18:15,286 - INFO - Updated: Solana (SOL) - $139.06
+2025-02-27 16:18:15,286 - INFO - Updated: USDC (USDC) - $0.999903
+2025-02-27 16:18:15,286 - INFO - Updated: Dogecoin (DOGE) - $0.206571
+2025-02-27 16:18:15,286 - INFO - Updated: Cardano (ADA) - $0.659253
+2025-02-27 16:18:15,286 - INFO - Updated: Lido Staked Ether (STETH) - $2326.93
+2025-02-27 16:18:15,286 - INFO - Updated: TRON (TRX) - $0.22782
+2025-02-27 16:18:15,286 - INFO - Updated: Wrapped Bitcoin (WBTC) - $85314
+2025-02-27 16:18:15,287 - INFO - Updated: Wrapped stETH (WSTETH) - $2762.49
+2025-02-27 16:18:15,287 - INFO - Updated: Chainlink (LINK) - $15.31
+2025-02-27 16:18:15,287 - INFO - Updated: Litecoin (LTC) - $123.45
+2025-02-27 16:18:15,287 - INFO - Updated: Avalanche (AVAX) - $22.44
+2025-02-27 16:18:15,287 - INFO - Updated: Sui (SUI) - $2.93
+2025-02-27 16:18:15,287 - INFO - Updated: Stellar (XLM) - $0.288844
+2025-02-27 16:18:15,287 - INFO - Updated: Toncoin (TON) - $3.48
+2025-02-27 16:18:15,287 - INFO - Updated: Shiba Inu (SHIB) - $1.446e-05
+2025-02-27 16:18:15,287 - INFO - Updated: LEO Token (LEO) - $9.1
+2025-02-27 16:18:15,287 - INFO - Updated: Hedera (HBAR) - $0.198911
+2025-02-27 16:18:15,287 - INFO - Updated: USDS (USDS) - $1.0
+2025-02-27 16:18:15,287 - INFO - Updated: Polkadot (DOT) - $4.86
+2025-02-27 16:18:15,288 - INFO - Updated: MANTRA (OM) - $7.31
+2025-02-27 16:18:15,288 - INFO - Updated: WETH (WETH) - $2326.37
+2025-02-27 16:18:15,288 - INFO - Updated: Hyperliquid (HYPE) - $20.34
+2025-02-27 16:18:15,288 - INFO - Updated: Bitcoin Cash (BCH) - $296.38
+2025-02-27 16:18:15,288 - INFO - Updated: Ethena USDe (USDE) - $0.999065
+2025-02-27 16:18:15,288 - INFO - Updated: Uniswap (UNI) - $8.04
+2025-02-27 16:18:15,288 - INFO - Updated: Wrapped eETH (WEETH) - $2468.15
+2025-02-27 16:18:15,288 - INFO - Updated: Bitget Token (BGB) - $3.97
+2025-02-27 16:18:15,288 - INFO - Updated: Monero (XMR) - $214.93
+2025-02-27 16:18:15,288 - INFO - Updated: WhiteBIT Coin (WBT) - $26.42
+2025-02-27 16:18:15,288 - INFO - Updated: NEAR Protocol (NEAR) - $3.06
+2025-02-27 16:18:15,288 - INFO - Updated: Aptos (APT) - $6.12
+2025-02-27 16:18:15,288 - INFO - Updated: Pepe (PEPE) - $8.42e-06
+2025-02-27 16:18:15,288 - INFO - Updated: Dai (DAI) - $1.0
+2025-02-27 16:18:15,289 - INFO - Updated: Internet Computer (ICP) - $6.55
+2025-02-27 16:18:15,289 - INFO - Updated: Ondo (ONDO) - $0.995888
+2025-02-27 16:18:15,289 - INFO - Updated: Aave (AAVE) - $205.34
+2025-02-27 16:18:15,289 - INFO - Updated: Bittensor (TAO) - $364.41
+2025-02-27 16:18:15,289 - INFO - Updated: sUSDS (SUSDS) - $1.04
+2025-02-27 16:18:15,289 - INFO - Updated: Ethereum Classic (ETC) - $18.93
+2025-02-27 16:18:15,289 - INFO - Updated: OKB (OKB) - $44.9
+2025-02-27 16:18:15,289 - INFO - Updated: Gate (GT) - $21.26
+2025-02-27 16:18:15,289 - INFO - Updated: Official Trump (TRUMP) - $13.28
+2025-02-27 16:18:15,289 - INFO - Updated: Mantle (MNT) - $0.760989
+2025-02-27 16:18:15,289 - INFO - Updated: Tokenize Xchange (TKX) - $30.44
+2025-02-27 16:18:15,289 - INFO - Updated: Coinbase Wrapped BTC (CBBTC) - $85452
+2025-02-27 16:18:15,289 - INFO - Updated: POL (ex-MATIC) (POL) - $0.278714
+2025-02-27 16:18:15,289 - INFO - Updated: VeChain (VET) - $0.0286134
+2025-02-27 16:18:15,289 - INFO - Updated: Sonic (prev. FTM) (S) - $0.718769
+2025-02-27 16:18:15,290 - INFO - Updated: Kaspa (KAS) - $0.086082
+2025-02-27 16:18:15,290 - INFO - Updated: First Digital USD (FDUSD) - $0.998965
+2025-02-27 16:18:15,290 - INFO - Updated: Celestia (TIA) - $3.87
+2025-02-27 16:18:15,290 - INFO - Updated: Filecoin (FIL) - $3.2
+2025-02-27 16:18:15,290 - INFO - Updated: Cronos (CRO) - $0.074844
+2025-02-27 16:18:15,290 - INFO - Updated: Algorand (ALGO) - $0.240305
+2025-02-27 16:18:15,290 - INFO - Updated: Cosmos Hub (ATOM) - $4.62
+2025-02-27 16:18:15,290 - INFO - Updated: Render (RENDER) - $3.83
+2025-02-27 16:18:15,290 - INFO - Updated: Jupiter (JUP) - $0.740403
+2025-02-27 16:18:15,290 - INFO - Updated: Optimism (OP) - $1.18
+2025-02-27 16:18:15,290 - INFO - Updated: Arbitrum (ARB) - $0.427832
+2025-02-27 16:18:15,290 - INFO - Updated: Artificial Superintelligence Alliance (FET) - $0.670954
+2025-02-27 16:18:15,290 - INFO - Updated: Lombard Staked BTC (LBTC) - $85401
+2025-02-27 16:18:15,290 - INFO - Updated: Fasttoken (FTN) - $3.95
+2025-02-27 16:18:15,291 - INFO - Updated: Story (IP) - $6.69
+2025-02-27 16:18:15,291 - INFO - Updated: Quant (QNT) - $101.03
+2025-02-27 16:18:15,291 - INFO - Updated: KuCoin (KCS) - $11.98
+2025-02-27 16:18:15,291 - INFO - Updated: Maker (MKR) - $1685.95
+2025-02-27 16:18:15,291 - INFO - Updated: Binance-Peg WETH (WETH) - $2330.74
+2025-02-27 16:18:15,291 - INFO - Updated: Ethena (ENA) - $0.429485
+2025-02-27 16:18:15,291 - INFO - Updated: Kelp DAO Restaked ETH (RSETH) - $2412.18
+2025-02-27 16:18:15,291 - INFO - Updated: Injective (INJ) - $13.43
+2025-02-27 16:18:15,291 - INFO - Updated: Solv Protocol SolvBTC (SOLVBTC) - $85117
+2025-02-27 16:18:15,291 - INFO - Updated: Immutable (IMX) - $0.711675
+2025-02-27 16:18:15,291 - INFO - Updated: Sei (SEI) - $0.269741
+2025-02-27 16:18:15,291 - INFO - Updated: XDC Network (XDC) - $0.079878
+2025-02-27 16:18:15,291 - INFO - Updated: Stacks (STX) - $0.822902
+2025-02-27 16:18:15,291 - INFO - Updated: Lido DAO (LDO) - $1.37
+2025-02-27 16:18:15,292 - INFO - Updated: NEXO (NEXO) - $1.2
+2025-02-27 16:18:15,292 - INFO - Updated: Theta Network (THETA) - $1.2
+2025-02-27 16:18:15,292 - INFO - Updated: Worldcoin (WLD) - $1.13
+2025-02-27 16:18:15,292 - INFO - Updated: The Graph (GRT) - $0.122976
+2025-02-27 16:18:15,292 - INFO - Updated: Rocket Pool ETH (RETH) - $2626.23
+2025-02-27 16:18:15,292 - INFO - Updated: DeXe (DEXE) - $19.81
+2025-02-27 16:18:15,292 - INFO - Updated: Movement (MOVE) - $0.470133
+2025-02-27 16:18:15,292 - INFO - Updated: Usual USD (USD0) - $0.997356
+2025-02-27 16:18:15,292 - INFO - Updated: Mantle Staked Ether (METH) - $2460.08
+2025-02-27 16:18:15,292 - INFO - Updated: Bonk (BONK) - $1.371e-05
+2025-02-27 16:18:15,292 - INFO - Updated: Binance Staked SOL (BNSOL) - $143.33
+2025-02-27 16:18:15,292 - INFO - Updated: Flare (FLR) - $0.01699926
+2025-02-27 16:18:15,292 - INFO - Updated: JasmyCoin (JASMY) - $0.01892056
+2025-02-27 16:18:15,292 - INFO - Updated: Solv Protocol SolvBTC.BBN (SOLVBTC.BBN) - $83892
+2025-02-27 16:18:15,292 - INFO - Updated: GALA (GALA) - $0.02001093
+2025-02-27 16:18:15,293 - INFO - Updated: EOS (EOS) - $0.565734
+2025-02-27 16:18:15,293 - INFO - Updated: FLOKI (FLOKI) - $8.476e-05
+2025-02-27 16:18:15,293 - INFO - Updated: Telcoin (TEL) - $0.0089709
+2025-02-27 16:18:15,293 - INFO - Updated: Tezos (XTZ) - $0.774516
