@@ -40,3 +40,13 @@ sqlite3 crypto_portfolio.db
    JOIN users u ON p.user_id = u.id
    JOIN cryptocurrencies c ON p.crypto_id = c.id
    WHERE u.username = 'candice';
+
+#Alembic :
+run to create a script for review:
+alembic revision --autogenerate -m "insert message"
+
+apply the migration:
+alembic upgrade head
+
+rollback:
+alembic downgrade -1
